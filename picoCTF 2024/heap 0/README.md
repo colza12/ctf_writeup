@@ -8,7 +8,7 @@ chal.c
 # Solution
 とりあえず、`nc tethys.picoctf.net 61024`を実行してみる。
 ```
-> nc tethys.picoctf.net 61024
+$ nc tethys.picoctf.net 61024
 
 Welcome to heap0!
 I put my data on the heap so it should be safe from any tampering.
