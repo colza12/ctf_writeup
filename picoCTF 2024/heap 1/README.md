@@ -6,6 +6,8 @@ attachment
 chall
 chall.c
 
+# Solution
+
 heap0とほぼ同じだと推察できるので、とりあえず、`nc tethys.picoctf.net 50975`を実行してみる。
 ```
 $ nc tethys.picoctf.net 50975
