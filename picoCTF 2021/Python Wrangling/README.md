@@ -1,6 +1,6 @@
 # Python Wrangling:General Skills
 
-Python scripts are invoked kind of like programs in the Terminal... Can you run [this Python script]() using [this password] to get [the flag]?
+Python scripts are invoked kind of like programs in the Terminal... Can you run [this Python script](https://github.com/colza12/ctf_writeup/blob/main/picoCTF%202021/Python%20Wrangling/ende.py) using [this password](https://github.com/colza12/ctf_writeup/blob/main/picoCTF%202021/Python%20Wrangling/pw.txt) to get [the flag](https://github.com/colza12/ctf_writeup/blob/main/picoCTF%202021/Python%20Wrangling/flag.txt.en)?
 
 # Solution
 問題文にあるように、とりあえず実行してみる。
