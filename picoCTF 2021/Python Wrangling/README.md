@@ -5,7 +5,7 @@ Python scripts are invoked kind of like programs in the Terminal... Can you run 
 # Solution
 問題文にあるように、とりあえず実行してみる。
 ```
-> python ende.py -d flag.txt.en
+$ python ende.py -d flag.txt.en
 Please enter the password:6008014f6008014f6008014f6008014f
 picoCTF{4p0110_1n_7h3_h0us3_6008014f}
 ```
