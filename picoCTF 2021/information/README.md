@@ -1,6 +1,6 @@
 # information:Forensics
 
-Files can always be changed in a secret way. Can you find the flag? [cat.jpg]()
+Files can always be changed in a secret way. Can you find the flag? [cat.jpg](https://github.com/colza12/ctf_writeup/blob/main/picoCTF%202021/information/cat.jpg)
 
 # Solution
 
