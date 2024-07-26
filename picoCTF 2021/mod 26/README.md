@@ -1,6 +1,7 @@
 # mod 26:Cryptography
 
-Cryptography can be easy, do you know what ROT13 is? cvpbPGS{arkg_gvzr_V'yy_gel_2_ebhaqf_bs_ebg13_nSkgmDJE}
+Cryptography can be easy, do you know what ROT13 is? 
+cvpbPGS{arkg_gvzr_V'yy_gel_2_ebhaqf_bs_ebg13_nSkgmDJE}
 
 # Solution
 問題文よりROT13による暗号化であると仮定する。
