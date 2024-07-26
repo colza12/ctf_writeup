@@ -1,6 +1,6 @@
 # Wave a flag:General Skills
 
-Can you invoke help flags for a tool or binary? [This program]() has extraordinarily helpful information...
+Can you invoke help flags for a tool or binary? [This program](https://github.com/colza12/ctf_writeup/blob/main/picoCTF%202021/Wave%20a%20flag/warm) has extraordinarily helpful information...
 
 # Solution
 
