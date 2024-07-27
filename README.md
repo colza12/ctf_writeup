@@ -20,5 +20,6 @@
 * [Bases](https://github.com/colza12/ctf_writeup/tree/main/picoCTF%202019/Bases)
 * [caesar](https://github.com/colza12/ctf_writeup/tree/main/picoCTF%202019/caesar)
 * [13](https://github.com/colza12/ctf_writeup/tree/main/picoCTF%202019/13)
+* [what's a net cat?](https://github.com/colza12/ctf_writeup/tree/main/picoCTF%202019/what's%20a%20net%20cat%3F)
 ## picoGym Exculusive
 ## picoMini by redpwn
