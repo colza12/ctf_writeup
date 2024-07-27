@@ -2,6 +2,8 @@
 
 Using netcat (nc) is going to be pretty important. Can you connect to `jupiter.challenges.picoctf.org` at port `25103` to get the flag?
 
+# Solution
+
 問題文の指示に従って、ncで接続。
 ```
 $ nc jupiter.challenges.picoctf.org 25103
