@@ -24,5 +24,6 @@
 * [Warmed Up](https://github.com/colza12/ctf_writeup/tree/main/picoCTF%202019/Warmed%20Up)
 * [Lets Warm Up](https://github.com/colza12/ctf_writeup/tree/main/picoCTF%202019/Lets%20Warm%20Up)
 * [The Numbers](https://github.com/colza12/ctf_writeup/tree/main/picoCTF%202019/The%20Numbers)
+* [2Warm](https://github.com/colza12/ctf_writeup/tree/main/picoCTF%202019/2Warm)
 ## picoGym Exculusive
 ## picoMini by redpwn
