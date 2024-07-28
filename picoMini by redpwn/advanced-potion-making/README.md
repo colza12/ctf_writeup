@@ -3,7 +3,7 @@
 Ron just found his own copy of advanced potion making, but its been corrupted by some kind of spell. Help him recover it!
 
 attachment
-* [advanced-potion-making]()
+* [advanced-potion-making](https://github.com/colza12/ctf_writeup/blob/main/picoMini%20by%20redpwn/advanced-potion-making/advanced-potion-making)
 
 # Solution
 
