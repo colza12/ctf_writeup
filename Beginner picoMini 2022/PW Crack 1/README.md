@@ -1,6 +1,6 @@
 # PW Crack 1:General Skills
 
-Can you crack the password to get the flag? Download the password checker [here]() and you'll need the encrypted [flag]() in the same directory too.
+Can you crack the password to get the flag? Download the password checker [here](https://github.com/colza12/ctf_writeup/blob/main/Beginner%20picoMini%202022/PW%20Crack%201/level1.py) and you'll need the encrypted [flag](https://github.com/colza12/ctf_writeup/blob/main/Beginner%20picoMini%202022/PW%20Crack%201/level1.flag.txt.enc) in the same directory too.
 
 # Solution
 
