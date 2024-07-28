@@ -1,8 +1,8 @@
 # Codebook:General Skills
 
-Run the Python script `code.py` in the same directory as `codebook.txt`.
-・[code.py]()
-・[codebook.txt]()
+Run the Python script `code.py` in the same directory as `codebook.txt`.\
+・[Download code.py]()\
+・[Download codebook.txt]()
 
 # Solution
 
