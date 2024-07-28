@@ -2,8 +2,7 @@
 
 I decided to try something noone else has before. I made a bot to automatically trade stonks for me using AI and machine learning. I wouldn't believe you if you told me it's unsecure! [vuln.c]() `nc mercury.picoctf.net 33411`
 
-添付ファイル
-・vuln.c
+# Solution
 
 とりあえずプロンプトに`nc mercury.picoctf.net 33411`をなげてみる。
 ```
@@ -106,4 +105,3 @@ Goodbye
 `picoCTF{I_l05t_4ll_my_m0n3y_a24c14a6}`
 
 ちなみに、Format String Attack(書式文字列攻撃)という、printf()などの関数の引数の特性を利用した攻撃方法らしい。
-
