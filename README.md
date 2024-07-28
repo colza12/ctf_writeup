@@ -37,3 +37,4 @@
 * [First Find](https://github.com/colza12/ctf_writeup/tree/main/picoGym%20Exclusive/First%20Find)
 * [Big Zip](https://github.com/colza12/ctf_writeup/tree/main/picoGym%20Exclusive/Big%20Zip)
 ## picoMini by redpwn
+## Beginner picoMini 2022
