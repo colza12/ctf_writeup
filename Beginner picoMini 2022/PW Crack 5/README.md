@@ -1,6 +1,6 @@
 # PW Crack 5:General Skills
 
-Can you crack the password to get the flag? Download the password checker [here]() and you'll need the encrypted [flag]() and the [hash]() in the same directory too. Here's a [dictionary]() with all possible passwords based on the password conventions we've seen so far.
+Can you crack the password to get the flag? Download the password checker [here](https://github.com/colza12/ctf_writeup/blob/main/Beginner%20picoMini%202022/PW%20Crack%205/level5.py) and you'll need the encrypted [flag](https://github.com/colza12/ctf_writeup/blob/main/Beginner%20picoMini%202022/PW%20Crack%205/level5.flag.txt.enc) and the [hash](https://github.com/colza12/ctf_writeup/blob/main/Beginner%20picoMini%202022/PW%20Crack%205/level5.hash.bin) in the same directory too. Here's a [dictionary]() with all possible passwords based on the password conventions we've seen so far.
 
 # Solution
 
