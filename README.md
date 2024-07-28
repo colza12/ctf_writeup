@@ -30,5 +30,6 @@
 * [Lets Warm Up](https://github.com/colza12/ctf_writeup/tree/main/picoCTF%202019/Lets%20Warm%20Up)
 * [The Numbers](https://github.com/colza12/ctf_writeup/tree/main/picoCTF%202019/The%20Numbers)
 * [2Warm](https://github.com/colza12/ctf_writeup/tree/main/picoCTF%202019/2Warm)
+* [Glory of the Garden](https://github.com/colza12/ctf_writeup/tree/main/picoCTF%202019/Glory%20of%20the%20Garden)
 ## picoGym Exculusive
 ## picoMini by redpwn
