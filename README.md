@@ -47,3 +47,4 @@
 * [HashingJobApp](https://github.com/colza12/ctf_writeup/tree/main/Beginner%20picoMini%202022/HashingJobApp)
 * [PW Crack 1](https://github.com/colza12/ctf_writeup/tree/main/Beginner%20picoMini%202022/PW%20Crack%201)
 * [PW Crack 2](https://github.com/colza12/ctf_writeup/tree/main/Beginner%20picoMini%202022/PW%20Crack%202)
+* [runme.py](https://github.com/colza12/ctf_writeup/tree/main/Beginner%20picoMini%202022/runme.py)
