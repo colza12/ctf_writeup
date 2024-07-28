@@ -1,7 +1,7 @@
 # Codebook:General Skills
 
 Run the Python script `code.py` in the same directory as `codebook.txt`.\
-・[Download code.py]()\
+・[Download code.py](https://github.com/colza12/ctf_writeup/blob/main/Beginner%20picoMini%202022/Codebook/code.py)\
 ・[Download codebook.txt]()
 
 # Solution
