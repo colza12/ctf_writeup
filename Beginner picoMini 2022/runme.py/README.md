@@ -1,7 +1,7 @@
 # runme.py:General Skills
 
-Run the runme.py script to get the flag. Download the script with your browser or with wget in the webshell. \
-[Download runme.py Python script]()
+Run the `runme.py` script to get the flag. Download the script with your browser or with `wget` in the webshell. \
+[Download runme.py Python script](https://github.com/colza12/ctf_writeup/blob/main/Beginner%20picoMini%202022/runme.py/runme.py)
 
 # Solution
 
