@@ -1,7 +1,7 @@
 # Serpentine:General Skills
 
 Find the flag in the Python script!\
-[Download Python script]()
+[Download Python script](https://github.com/colza12/ctf_writeup/blob/main/Beginner%20picoMini%202022/Serpentine/serpentine.py)
 
 # Solution 
 
