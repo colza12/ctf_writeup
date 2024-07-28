@@ -50,3 +50,4 @@
 * [runme.py](https://github.com/colza12/ctf_writeup/tree/main/Beginner%20picoMini%202022/runme.py)
 * [Serpentine](https://github.com/colza12/ctf_writeup/tree/main/Beginner%20picoMini%202022/Serpentine)
 * [PW Crack 3](https://github.com/colza12/ctf_writeup/tree/main/Beginner%20picoMini%202022/PW%20Crack%203)
+* [PW Crack 4](https://github.com/colza12/ctf_writeup/blob/main/Beginner%20picoMini%202022/PW%20Crack%204/README.md)
