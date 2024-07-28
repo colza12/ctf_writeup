@@ -1,7 +1,7 @@
 # fixme1.py:General Skills
 
 Fix the syntax error in this Python script to print the flag.\
-[Download Python script]()
+[Download Python script](https://github.com/colza12/ctf_writeup/blob/main/Beginner%20picoMini%202022/fixme1.py/fixme1.py)
 
 # Solution
 
