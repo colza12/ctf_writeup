@@ -1,6 +1,6 @@
 # PW Crack 3:General Skills
 
-Can you crack the password to get the flag? Download the password checker [here]() and you'll need the encrypted [flag]() and the [hash]() in the same directory too. There are 7 potential passwords with 1 being correct. You can find these by examining the password checker script.
+Can you crack the password to get the flag? Download the password checker [here](https://github.com/colza12/ctf_writeup/blob/main/Beginner%20picoMini%202022/PW%20Crack%203/level3.py) and you'll need the encrypted [flag](https://github.com/colza12/ctf_writeup/blob/main/Beginner%20picoMini%202022/PW%20Crack%203/level3.flag.txt.enc) and the [hash](https://github.com/colza12/ctf_writeup/blob/main/Beginner%20picoMini%202022/PW%20Crack%203/level3.hash.bin) in the same directory too. There are 7 potential passwords with 1 being correct. You can find these by examining the password checker script.
 
 # Solution
 
