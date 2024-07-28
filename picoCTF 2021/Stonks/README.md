@@ -100,8 +100,8 @@ Portfolio as of Fri Apr 26 01:54:28 UTC 2024
 Goodbye
 ```
 出てきた怪しげな謎文字列をhex→UTF-8にすると、\
-![image.png](https://github.com/colza12/ctf_writeup/blob/main/picoCTF%202021/Stonks/image/capture.png)
-\4文字ずつ逆になっているflag(リトルエンディアンで記述されている)が出てきたので、並べ替える。
+![image.png](https://github.com/colza12/ctf_writeup/blob/main/picoCTF%202021/Stonks/image/capture.png)\
+4文字ずつ逆になっているflag(リトルエンディアンで記述されている)が出てきたので、並べ替える。
 
 `picoCTF{I_l05t_4ll_my_m0n3y_a24c14a6}`
 
