@@ -32,4 +32,6 @@
 * [2Warm](https://github.com/colza12/ctf_writeup/tree/main/picoCTF%202019/2Warm)
 * [Glory of the Garden](https://github.com/colza12/ctf_writeup/tree/main/picoCTF%202019/Glory%20of%20the%20Garden)
 ## picoGym Exculusive
+[picoGym Exculusive](https://github.com/colza12/ctf_writeup/tree/main/picoGym%20Exclusive)
+* [ASCII Numbers](https://github.com/colza12/ctf_writeup/tree/main/picoGym%20Exclusive/ASCII%20Numbers)
 ## picoMini by redpwn
