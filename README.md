@@ -35,4 +35,5 @@
 [picoGym Exculusive](https://github.com/colza12/ctf_writeup/tree/main/picoGym%20Exclusive)
 * [ASCII Numbers](https://github.com/colza12/ctf_writeup/tree/main/picoGym%20Exclusive/ASCII%20Numbers)
 * [First Find](https://github.com/colza12/ctf_writeup/tree/main/picoGym%20Exclusive/First%20Find)
+* [Big Zip](https://github.com/colza12/ctf_writeup/tree/main/picoGym%20Exclusive/Big%20Zip)
 ## picoMini by redpwn
