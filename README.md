@@ -38,8 +38,8 @@
 * [Big Zip](https://github.com/colza12/ctf_writeup/tree/main/picoGym%20Exclusive/Big%20Zip)
 ## picoMini by redpwn
 [picoMini by redpwn](https://github.com/colza12/ctf_writeup/tree/main/picoMini%20by%20redpwn)
-* [login](https://github.com/colza12/ctf_writeup/tree/main/picoMini%20by%20redpwn/login)
-* [advanced-potion-making](https://github.com/colza12/ctf_writeup/tree/main/picoMini%20by%20redpwn/advanced-potion-making)
+* [login:Web Exploitation](https://github.com/colza12/ctf_writeup/tree/main/picoMini%20by%20redpwn/login)
+* [advanced-potion-making:Forensics](https://github.com/colza12/ctf_writeup/tree/main/picoMini%20by%20redpwn/advanced-potion-making)
 ## Beginner picoMini 2022
 [Beginner picoMini 2022](https://github.com/colza12/ctf_writeup/tree/main/Beginner%20picoMini%202022)
 * [Codebook](https://github.com/colza12/ctf_writeup/tree/main/Beginner%20picoMini%202022/Codebook)
