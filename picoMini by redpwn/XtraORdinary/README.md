@@ -3,8 +3,8 @@
 Check out my new, never-before-seen method of encryption! I totally invented it myself. I added so many for loops that I don't even know what it does. It's extraordinarily secure!
 
 attachment
-* [output.txt]()
-* [encrypt.py]()
+* [output.txt](https://github.com/colza12/ctf_writeup/blob/main/picoMini%20by%20redpwn/XtraORdinary/output.txt)
+* [encrypt.py](https://github.com/colza12/ctf_writeup/blob/main/picoMini%20by%20redpwn/XtraORdinary/encrypt.py)
 
 # Solution
 
