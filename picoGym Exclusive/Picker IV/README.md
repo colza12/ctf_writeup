@@ -2,7 +2,7 @@
 
 Can you figure out how this program works to get the flag?\
 Connect to the program with netcat: `$ nc saturn.picoctf.net 51785`\
-The program's source code can be downloaded [here](). The binary can be downloaded [here]().
+The program's source code can be downloaded [here](https://github.com/colza12/ctf_writeup/blob/main/picoGym%20Exclusive/Picker%20IV/picker-IV.c). The binary can be downloaded [here](https://github.com/colza12/ctf_writeup/blob/main/picoGym%20Exclusive/Picker%20IV/picker-IV).
 
 # Solution
 
