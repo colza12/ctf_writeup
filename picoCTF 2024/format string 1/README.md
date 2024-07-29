@@ -1,8 +1,8 @@
 # format string 1:Binary Exploitation
 
 Patrick and Sponge Bob were really happy with those orders you made for them, but now they're curious about the secret menu. Find it, and along the way, maybe you'll find something else of interest!\
-Download the binary [here]().\
-Download the source [here]().\
+Download the binary [here](https://github.com/colza12/ctf_writeup/blob/main/picoCTF%202024/format%20string%201/format-string-1).\
+Download the source [here](https://github.com/colza12/ctf_writeup/blob/main/picoCTF%202024/format%20string%201/format-string-1.c).\
 Connect with the challenge instance here: `nc mimas.picoctf.net 49971`
 
 # Solution
