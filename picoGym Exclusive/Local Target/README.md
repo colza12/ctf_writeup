@@ -1,7 +1,7 @@
 # Local Target:Binary Exploitation
 
 Smash the stack\
-Can you overflow the buffer and modify the other local variable? The program is available [here](). You can view source [here](). And connect with it using: `nc saturn.picoctf.net 60800`
+Can you overflow the buffer and modify the other local variable? The program is available [here](https://github.com/colza12/ctf_writeup/blob/main/picoGym%20Exclusive/Local%20Target/local-target). You can view source [here](https://github.com/colza12/ctf_writeup/blob/main/picoGym%20Exclusive/Local%20Target/local-target.c). And connect with it using: `nc saturn.picoctf.net 60800`
 
 # Solution
 
