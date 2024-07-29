@@ -2,7 +2,7 @@
 
 Patrick and Sponge Bob were really happy with those orders you made for them, but now they're curious about the secret menu. Find it, and along the way, maybe you'll find something else of interest!\
 Download the binary [here]().\
-Download the source [here]().
+Download the source [here]().\
 Connect with the challenge instance here: `nc mimas.picoctf.net 49971`
 
 # Solution
