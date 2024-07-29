@@ -3,8 +3,8 @@
 To get the flag, you must break RSA not once, but three times!
 
 attachment
-* [public-key.txt]()
-* [encrypt.py]()
+* [public-key.txt](https://github.com/colza12/ctf_writeup/blob/main/picoMini%20by%20redpwn/triple-secure/public-key.txt)
+* [encrypt.py](https://github.com/colza12/ctf_writeup/blob/main/picoMini%20by%20redpwn/triple-secure/encrypt.py)
 
 # Solution
 
