@@ -1,7 +1,7 @@
 # buffer overflow 2:Binary Exploitation
 
 Control the return address and arguments\
-This time you'll need to control the arguments to the function you return to! Can you get the flag from this [program]()? You can view source [here](). And connect with it using `nc saturn.picoctf.net 60902`
+This time you'll need to control the arguments to the function you return to! Can you get the flag from this [program](https://github.com/colza12/ctf_writeup/blob/main/picoCTF%202022/buffer%20overflow%202/vuln)? You can view source [here](https://github.com/colza12/ctf_writeup/blob/main/picoCTF%202022/buffer%20overflow%202/vuln.c). And connect with it using `nc saturn.picoctf.net 60902`
 
 # Solution
 
