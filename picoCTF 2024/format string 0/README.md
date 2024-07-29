@@ -1,8 +1,8 @@
 # format string 0:Binary Exploitation
 
 Can you use your knowledge of format strings to make the customers happy?\
-Download the binary [here]().\
-Download the source [here]().
+Download the binary [here](https://github.com/colza12/ctf_writeup/blob/main/picoCTF%202024/format%20string%200/format-string-0).\
+Download the source [here](https://github.com/colza12/ctf_writeup/blob/main/picoCTF%202024/format%20string%200/format-string-0.c).
 Connect with the challenge instance here: `nc mimas.picoctf.net 60866`
 
 # Solution
