@@ -5,7 +5,7 @@ $ python8
 `nc 160.251.183.149 3838`
 
 Attachment\
-[python8.zip]()
+[python8.zip](https://github.com/colza12/ctf_writeup/blob/main/SatokiCTF/Misc/python8/python8.zip)
 
 Difficulty Level : medium\
 Point : 300
