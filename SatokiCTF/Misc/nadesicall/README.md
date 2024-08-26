@@ -5,7 +5,7 @@
 `nc 160.251.183.149 31411`
 
 Attachment
-[nadesicall]()
+[nadesicall](https://github.com/colza12/ctf_writeup/blob/main/SatokiCTF/Misc/nadesicall/nadesicall.zip)
 
 Difficulty Level : easy\
 Point : 200
