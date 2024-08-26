@@ -1,4 +1,11 @@
 # ctf_writeup
+## SatokiCTF(26/08/2024)
+[SatokiCTF]()
+* [Welcome:Welcome]()
+* [zzz:Misc]()
+* [HBD:Misc]()
+* [nadesicall:Misc]()
+* [python8]()
 
 # 常設
 ## picoCTF 2024
