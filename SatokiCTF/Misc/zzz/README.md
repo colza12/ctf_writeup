@@ -16,8 +16,16 @@ SFTPやSCP, ポートフォワーディングといったSSHならではの機�
 
 # Solution
 
-なんかがちゃがちゃしてたらフラグが出てきた。\
+最初、`sshpass -p ctf ssh ctf@160.251.183.149 -p 22222`では、なぜか接続できず、`sshpass -p ctf ssh -oStrictHostKeyChecking=no ctf@160.251.183.149 -p 22222`を試してみたところ接続することができた。\
+そして、なんかがちゃがちゃしてたらフラグが出てきた。\
 SIGQUITをすることによってsleep infinityだけを終了させられるらしい。\
 ちなみにがちゃがちゃしたというのは`Ctrl+\`。
+```
+$ sshpass -p ctf ssh ctf@160.251.183.149 -p 22222
+I'm going to sleep for a while. I will give you the flag when I wake up. Oyasumi!
+^\/app/zzz.sh: line 3: 18226 Quit                    (core dumped) sleep infinity
+flag{eternal_spring_dream_27ff12ce}
+Connection to 160.251.183.149 closed.
+```
 
 `flag{eternal_spring_dream_27ff12ce}`
