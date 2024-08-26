@@ -4,7 +4,7 @@
 
 `sshpass -p ctf ssh ctf@160.251.183.149 -p 22222`
 Attachment\
-[zzz.zip](https://github.com/colza12/ctf_writeup/new/main/SatokiCTF/Misc/zzz/zzz.zip)
+[zzz.zip](https://github.com/colza12/ctf_writeup/blob/main/SatokiCTF/Misc/zzz/zzz.zip)
 
 Difficulty Level : warmup\
 Point : 100
