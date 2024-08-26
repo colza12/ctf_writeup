@@ -5,7 +5,7 @@ Apache HTTP Serverにも誕生日を祝わせることでフラグが得られ�
 http://160.251.183.149:8848/
 
 Attachment\
-[hbd.zip]()
+[hbd.zip](https://github.com/colza12/ctf_writeup/blob/main/SatokiCTF/Misc/HBD/hbd.zip)
 
 Difficulty Level : warmup\
 Point : 100
