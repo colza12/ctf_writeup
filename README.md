@@ -1,11 +1,11 @@
 # ctf_writeup
 ## SatokiCTF(26/08/2024)
-[SatokiCTF]()
-* [Welcome:Welcome]()
-* [zzz:Misc]()
-* [HBD:Misc]()
-* [nadesicall:Misc]()
-* [python8]()
+[SatokiCTF](https://github.com/colza12/ctf_writeup/tree/main/SatokiCTF)
+* [Welcome:Welcome](https://github.com/colza12/ctf_writeup/tree/main/SatokiCTF/Welcome/Welcome)
+* [zzz:Misc](https://github.com/colza12/ctf_writeup/tree/main/SatokiCTF/Misc/zzz)
+* [HBD:Misc](https://github.com/colza12/ctf_writeup/tree/main/SatokiCTF/Misc/HBD)
+* [nadesicall:Misc](https://github.com/colza12/ctf_writeup/tree/main/SatokiCTF/Misc/nadesicall)
+* [python8:Misc](https://github.com/colza12/ctf_writeup/tree/main/SatokiCTF/Misc/python8)
 
 # 常設
 ## picoCTF 2024
