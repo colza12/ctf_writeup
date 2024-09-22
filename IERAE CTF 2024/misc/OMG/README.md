@@ -10,7 +10,6 @@ Solved : 191
 
 # Solution
 とりあえず、リンクにアクセスしてみる。\
-と、\
 ![site_image0](https://github.com/colza12/ctf_writeup/blob/main/IERAE%20CTF%202024/misc/OMG/image/site_image0.png)\
 スタートボタンを押して、ブラウザの戻るボタンを33回押せば良いらしい。\
 やってみる。\
