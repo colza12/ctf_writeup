@@ -108,8 +108,8 @@ if __name__ == "__main__":
 * 出力される16個の乱数は、seedで固定した乱数列からランダムの数値を取り出したもの。
 
 Mersenne Twister (MT19937)は624個の周期で乱数を生成している。\
-seedで乱数列が固定されているため、16個の乱数を624個出力させて、そこから逆算することでsecretの数値を求めることができる。secretは624個の乱数の一番最後にあたる。
-secretの数値を求める際、[Mersenne Twister (MT19937) で未来と過去の乱数列を予測してみる【Python】](https://zenn.dev/hk_ilohas/articles/mersenne-twister-previous-state)を参考に(script kiddy)した。
+seedで乱数列が固定されているため、16個の乱数を624個出力させて、そこから逆算することでsecretの数値を求めることができる。secretは624個の乱数の一番最後にあたる。\
+secretの数値を求める際、[Mersenne Twister (MT19937) で未来と過去の乱数列を予測してみる【Python】](https://zenn.dev/hk_ilohas/articles/mersenne-twister-previous-state)を参考に(script kiddy)した。\
 以下、実行コード。(乱数取得とsecret推定は別のコード)
 ```python:solveprng.py
 import re
