@@ -18,7 +18,7 @@ Solved : 191
 出題されている他の問題の宣伝と、戻るボタンの残り回数が表示された。\
 続けて、カウントが0になるまで戻るボタンを押す。\
 ![site_image2](https://github.com/colza12/ctf_writeup/blob/main/IERAE%20CTF%202024/misc/OMG/image/site_image2.png)\
-フラグが得られた。
+flagが得られた。
 
 ちなみに、ierae ctfのスコアサーバを開いているタブでリンクをそのまま開くという失敗をしてしまったため、browserのhistoryをhijackingされてしまい、ブラウザの履歴から探してスコアサーバを開きなおすはめになりました。\
 気を付けてください。
