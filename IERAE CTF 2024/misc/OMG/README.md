@@ -15,7 +15,7 @@ Solved : 191
 やってみる。\
 ![site_image1](https://github.com/colza12/ctf_writeup/blob/main/IERAE%20CTF%202024/misc/OMG/image/site_image1.png)\
 出題されている他の問題の宣伝と、戻るボタンの残り回数が表示された。\
-続けて、カウントが0になるまで戻るボタンを押す。\
+続けて、カウントが0になるまで戻るボタンを押す。押しすぎるとカウントがリセットされる。\
 ![site_image2](https://github.com/colza12/ctf_writeup/blob/main/IERAE%20CTF%202024/misc/OMG/image/site_image2.png)\
 flagが得られた。
 
