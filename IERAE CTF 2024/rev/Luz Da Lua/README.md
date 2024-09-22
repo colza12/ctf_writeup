@@ -4,7 +4,7 @@ The luac file is compiled and tested on Lua 5.4.7\
 `lua LuzDaLua.luac`
 
 attachment\
-[firectf_ierae-ctf-2024-prod-eh2j3_distfiles_luz-da-lua.tar.gz]()
+[firectf_ierae-ctf-2024-prod-eh2j3_distfiles_luz-da-lua.tar.gz](https://github.com/colza12/ctf_writeup/blob/main/IERAE%20CTF%202024/rev/Luz%20Da%20Lua/firectf_ierae-ctf-2024-prod-eh2j3_distfiles_luz-da-lua.tar.gz)
 
 Difficulty Level : easy\
 Point : 159\
