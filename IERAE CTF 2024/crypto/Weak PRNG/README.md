@@ -4,7 +4,7 @@ Do you understand the traits of that famous PRNG?\
 `nc 35.185.131.17 19937`
 
 attachment\
-[firectf_ierae-ctf-2024-prod-eh2j3_distfiles_weak-prng.tar.gz]()
+[firectf_ierae-ctf-2024-prod-eh2j3_distfiles_weak-prng.tar.gz](https://github.com/colza12/ctf_writeup/blob/main/IERAE%20CTF%202024/crypto/Weak%20PRNG/firectf_ierae-ctf-2024-prod-eh2j3_distfiles_weak-prng.tar.gz)
 
 Difficulty Level : easy\
 Point : 185\
