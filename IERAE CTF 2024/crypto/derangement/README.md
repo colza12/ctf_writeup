@@ -4,7 +4,7 @@ I've made a secret magic string, perfectly encrypted!\
 `nc 35.221.153.165 55555`
 
 attachment\
-[firectf_ierae-ctf-2024-prod-eh2j3_distfiles_derangement.tar.gz]()
+[firectf_ierae-ctf-2024-prod-eh2j3_distfiles_derangement.tar.gz](https://github.com/colza12/ctf_writeup/blob/main/IERAE%20CTF%202024/crypto/derangement/firectf_ierae-ctf-2024-prod-eh2j3_distfiles_derangement.tar.gz)
 
 Difficulty Level : warmup\
 Point : 149\
