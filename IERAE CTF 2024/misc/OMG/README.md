@@ -11,7 +11,7 @@ Solved : 191
 # Solution
 とりあえず、リンクにアクセスしてみる。\
 と、
-![site_image0]()\
+![site_image0](IERAE CTF 2024/misc/OMG/image/site_image0.png)\
 スタートボタンを押して、ブラウザの戻るボタンを33回押せば良いらしい。\
 やってみる。
 ![site_image1]()\
