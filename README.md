@@ -1,11 +1,11 @@
 # ctf_writeup
 ## IERAE CTF 2024(22/09/2024)
-[IERAE CTF 2024]()
-* [OMG:misc]()
-* [Assignment:rev]()
-* [Luz Da Lua:rev]()
-* [derangement:crypto]()
-* [Weak PRNG:crypto]()
+[IERAE CTF 2024](https://github.com/colza12/ctf_writeup/tree/main/IERAE%20CTF%202024)
+* [OMG:misc](https://github.com/colza12/ctf_writeup/tree/main/IERAE%20CTF%202024/misc/OMG)
+* [Assignment:rev](https://github.com/colza12/ctf_writeup/tree/main/IERAE%20CTF%202024/rev/Assignment)
+* [Luz Da Lua:rev](https://github.com/colza12/ctf_writeup/tree/main/IERAE%20CTF%202024/rev/Luz%20Da%20Lua)
+* [derangement:crypto](https://github.com/colza12/ctf_writeup/tree/main/IERAE%20CTF%202024/crypto/derangement)
+* [Weak PRNG:crypto](https://github.com/colza12/ctf_writeup/tree/main/IERAE%20CTF%202024/crypto/Weak%20PRNG)
 
 ## SatokiCTF(26/08/2024)
 [SatokiCTF](https://github.com/colza12/ctf_writeup/tree/main/SatokiCTF)
