@@ -57,7 +57,7 @@ pwndbg> r
 pwndbg> x/s $rip+0x2e0f
 0x55555555804e <flag+14>:       "d0m_str1ng_5a9354c}"
 ```
-フラグの後半だけが出力された。前半部分を探すのは少し手間だったため、ripに格納するasciiコードを手動で並べ替え、cyberchefでfrom HEXしてしまった。\
+フラグの後半だけが出力された。前半部分を探すのは少し手間だったため、ripに格納するasciiコードを手動で並べ替え、cyberchefでfrom Hexしてしまった。\
 flagが得られた。
 
 `IERAE{s0me_r4nd0m_str1ng_5a9354c}`
