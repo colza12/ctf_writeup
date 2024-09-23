@@ -6,6 +6,7 @@
 * [Luz Da Lua:rev](https://github.com/colza12/ctf_writeup/tree/main/IERAE%20CTF%202024/rev/Luz%20Da%20Lua)
 * [derangement:crypto](https://github.com/colza12/ctf_writeup/tree/main/IERAE%20CTF%202024/crypto/derangement)
 * [Weak PRNG:crypto](https://github.com/colza12/ctf_writeup/tree/main/IERAE%20CTF%202024/crypto/Weak%20PRNG)
+* [This is warmup:pwn](https://github.com/colza12/ctf_writeup/tree/main/IERAE%20CTF%202024/pwn/This%20is%20warmup)
 
 ## SatokiCTF(26/08/2024)
 [SatokiCTF](https://github.com/colza12/ctf_writeup/tree/main/SatokiCTF)
