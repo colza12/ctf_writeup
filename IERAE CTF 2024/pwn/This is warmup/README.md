@@ -4,7 +4,7 @@ Trust me. If this problem is too difficult for you, I don't mind you burying me 
 nc 104.199.135.28 33334
 
 attachment\
-[firectf_ierae-ctf-2024-prod-eh2j3_distfiles_this-is-warmup.tar.gz]()
+[firectf_ierae-ctf-2024-prod-eh2j3_distfiles_this-is-warmup.tar.gz](https://github.com/colza12/ctf_writeup/blob/main/IERAE%20CTF%202024/pwn/This%20is%20warmup/firectf_ierae-ctf-2024-prod-eh2j3_distfiles_this-is-warmup.tar.gz)
 
 Difficulty Level : warmup\
 Point : 193\
