@@ -5,6 +5,6 @@ Run the `runme.py` script to get the flag. Download the script with your browser
 
 # Solution
 
-コマンドプロンプトに`python runme.py`を入力してrnme.pyを実行するだけでflagが得られた。
+コマンドプロンプトに`python runme.py`を入力してrunme.pyを実行するだけでflagが得られた。
 
 `picoCTF{run_s4n1ty_run}`
