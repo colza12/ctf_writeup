@@ -1,7 +1,7 @@
 # Serpentine:General Skills
 
-Find the flag in the Python script!\
-[Download Python script](https://github.com/colza12/ctf_writeup/blob/main/Beginner%20picoMini%202022/Serpentine/serpentine.py)
+Find the flag in the Python script!  
+[Download Python script](serpentine.py)
 
 # Solution 
 
@@ -25,7 +25,7 @@ def print_flag():
   print(flag)
 ```
 以下、実行コード。
-```python
+```python solve.py
 def str_xor(secret, key):
     #extend key to secret length
     new_key = key
@@ -40,6 +40,6 @@ flag_enc = chr(0x15) + chr(0x07) + chr(0x08) + chr(0x06) + chr(0x27) + chr(0x21)
 flag = str_xor(flag_enc, 'enkidu')
 print(flag)
 ```
-実行するとフラグが得られた。
+実行するとflagが得られた。
 
 `picoCTF{7h3_r04d_l355_7r4v3l3d_8e47d128}`
