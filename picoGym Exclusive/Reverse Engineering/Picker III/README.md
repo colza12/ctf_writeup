@@ -1,8 +1,8 @@
 # Picker III:Reverse Engineering
 
-Can you figure out how this program works to get the flag?\
-Connect to the program with netcat: `$ nc saturn.picoctf.net 53983`\
-The program's source code can be downloaded [here](https://github.com/colza12/ctf_writeup/blob/main/picoGym%20Exclusive/Picker%20III/picker-III.py).
+Can you figure out how this program works to get the flag?  
+Connect to the program with netcat: `$ nc saturn.picoctf.net 53983`  
+The program's source code can be downloaded [here](picker-III.py).
 
 # Solution
 
@@ -32,7 +32,7 @@ Here's the current table:
 ```
 数字を入力するとtableの数字に対応する関数が実行できるらしい。
 picker-III.pyを見てみる。
-```python
+```python picker-III.py
 def write_variable():
   var_name = input('Please enter variable name to write: ')
   if( filter_var_name(var_name) ):
@@ -65,7 +65,7 @@ Please enter new value of variable: win
 ==> 4
 0x70 0x69 0x63 0x6f 0x43 0x54 0x46 0x7b 0x37 0x68 0x31 0x35 0x5f 0x31 0x35 0x5f 0x77 0x68 0x34 0x37 0x5f 0x77 0x33 0x5f 0x67 0x33 0x37 0x5f 0x77 0x31 0x37 0x68 0x5f 0x75 0x35 0x33 0x72 0x35 0x5f 0x31 0x6e 0x5f 0x63 0x68 0x34 0x72 0x67 0x33 0x5f 0x32 0x32 0x36 0x64 0x64 0x32 0x38 0x35 0x7d
 ```
-なんかHexが出てきたのでascii変換するとフラグが得られた。
+なんかHexが出てきたのでascii変換するとflagが得られた。
 
 `picoCTF{7h15_15_wh47_w3_g37_w17h_u53r5_1n_ch4rg3_226dd285}`
 
