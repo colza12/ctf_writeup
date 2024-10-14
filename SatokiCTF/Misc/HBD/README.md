@@ -4,10 +4,10 @@ Apache HTTP Serverにも誕生日を祝わせることでフラグが得られ�
 
 http://160.251.183.149:8848/
 
-Attachment\
-[hbd.zip](https://github.com/colza12/ctf_writeup/blob/main/SatokiCTF/Misc/HBD/hbd.zip)
+Attachment  
+[hbd.zip](hbd.zip)
 
-Difficulty Level : warmup\
+Difficulty Level : warmup  
 Point : 100
 
 # Solution
@@ -33,8 +33,8 @@ func modify(r *http.Response) error {
 	return nil
 }
 ```
-`HBD!Satoki!`をbodyのどこかに含めるとフラグが得られるようだ。\
-BurpSuiteを使ってRequestのGETメソッドをHBD!Satoki!メソッドに書き換える。\
+`HBD!Satoki!`をbodyのどこかに含めるとフラグが得られるようだ。  
+BurpSuiteを使ってRequestのGETメソッドをHBD!Satoki!メソッドに書き換える。  
 と、Responseでフラグが返ってきた。
 
 `flag{tanjobi_anata_8ae01c4e}`
