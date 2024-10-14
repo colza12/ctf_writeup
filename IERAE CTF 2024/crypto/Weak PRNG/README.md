@@ -1,13 +1,13 @@
 # Weak PRNG:crypto
 
-Do you understand the traits of that famous PRNG?\
+Do you understand the traits of that famous PRNG?  
 `nc 35.185.131.17 19937`
 
-attachment\
-[firectf_ierae-ctf-2024-prod-eh2j3_distfiles_weak-prng.tar.gz](https://github.com/colza12/ctf_writeup/blob/main/IERAE%20CTF%202024/crypto/Weak%20PRNG/firectf_ierae-ctf-2024-prod-eh2j3_distfiles_weak-prng.tar.gz)
+attachment  
+[firectf_ierae-ctf-2024-prod-eh2j3_distfiles_weak-prng.tar.gz](firectf_ierae-ctf-2024-prod-eh2j3_distfiles_weak-prng.tar.gz)
 
-Difficulty Level : easy\
-Point : 185\
+Difficulty Level : easy  
+Point : 185  
 Solved : 54
 
 # Solution
@@ -107,9 +107,9 @@ if __name__ == "__main__":
 * seedを使って32bitの固定の乱数列を生成し、そこからランダムに1つの数値を取り出してsecretに格納している。
 * 出力される16個の乱数は、seedで固定した乱数列からランダムの数値を取り出したもの。
 
-Mersenne Twister (MT19937)は624個の周期で乱数を生成している。\
-seedで乱数列が固定されているため、16個の乱数を624個出力させて、そこから逆算することでsecretの数値を求めることができる。secretは624個の乱数の一番最後にあたる。\
-secretの数値を求める際、[Mersenne Twister (MT19937) で未来と過去の乱数列を予測してみる【Python】](https://zenn.dev/hk_ilohas/articles/mersenne-twister-previous-state)を参考に(script kiddy)した。\
+Mersenne Twister (MT19937)は624個の周期で乱数を生成している。  
+seedで乱数列が固定されているため、16個の乱数を624個出力させて、そこから逆算することでsecretの数値を求めることができる。secretは624個の乱数の一番最後にあたる。  
+secretの数値を求める際、[Mersenne Twister (MT19937) で未来と過去の乱数列を予測してみる【Python】](https://zenn.dev/hk_ilohas/articles/mersenne-twister-previous-state)を参考に(script kiddy)した。  
 以下、実行コード。(乱数取得とsecret推定は別のコード)
 ```python:solveprng.py
 import re
