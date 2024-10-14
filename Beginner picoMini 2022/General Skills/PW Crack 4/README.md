@@ -1,6 +1,6 @@
 # PW Crack 4:General Skills
 
-Can you crack the password to get the flag? Download the password checker [here](https://github.com/colza12/ctf_writeup/blob/main/Beginner%20picoMini%202022/PW%20Crack%204/level4.py) and you'll need the encrypted [flag](https://github.com/colza12/ctf_writeup/blob/main/Beginner%20picoMini%202022/PW%20Crack%204/level4.flag.txt.enc) and the [hash](https://github.com/colza12/ctf_writeup/blob/main/Beginner%20picoMini%202022/PW%20Crack%204/level4.hash.bin) in the same directory too. There are 100 potential passwords with only 1 being correct. You can find these by examining the password checker script.
+Can you crack the password to get the flag? Download the password checker [here](level4.py) and you'll need the encrypted [flag]level4.flag.txt.enc) and the [hash](level4.hash.bin) in the same directory too. There are 100 potential passwords with only 1 being correct. You can find these by examining the password checker script.
 
 # Solution
 
@@ -58,6 +58,6 @@ level_4_pw_check(a)
 
 ```
 
-フラグが得られた。
+flagが得られた。
 
 `picoCTF{fl45h_5pr1ng1ng_d770d48c}`
