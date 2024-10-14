@@ -3,8 +3,8 @@
 To get the flag, you must break RSA not once, but three times!
 
 attachment
-* [public-key.txt](triple-secure/public-key.txt)
-* [encrypt.py](triple-secure/encrypt.py)
+* [public-key.txt](public-key.txt)
+* [encrypt.py](encrypt.py)
 
 # Solution
 
