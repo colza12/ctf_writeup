@@ -1,7 +1,7 @@
 # First Find:General Skills
 
 Unzip this archive and find the file named 'uber-secret.txt'
-[Download zip file](files.zip)
+* [Download zip file](files.zip)
 
 # Solution
 
