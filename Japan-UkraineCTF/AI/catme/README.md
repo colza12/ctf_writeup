@@ -1,16 +1,16 @@
 # catme:AI
 
-40文字以内のコマンドを3回まで実行できます。\
-ただし、正確に実行してくれるとは限りません！\
-※フラグ形式：flag{ *** }\
-ーーーーーーーーーーーーーーーーーーーーーーーーーーー\
-You can execute commands up to 3 times, each within 40 characters.\
-However, the commands may not always execute correctly!\
+40文字以内のコマンドを3回まで実行できます。  
+ただし、正確に実行してくれるとは限りません！  
+※フラグ形式：flag{ *** }  
+ーーーーーーーーーーーーーーーーーーーーーーーーーーー  
+You can execute commands up to 3 times, each within 40 characters.  
+However, the commands may not always execute correctly!  
 ※Flag format: flag{ *** }
 
 `nc 52.193.161.193 4444`
 
-※If nc (netcat) is not available, either install it or use telnet with the\
+※If nc (netcat) is not available, either install it or use telnet with the  
 command: `telnet 52.193.161.193 4444`
 
 Point : 150
