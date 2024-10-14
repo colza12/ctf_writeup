@@ -37,7 +37,7 @@ random_strs = [
 ```
 暗号化の手順は、flagをkeyでxorしたものを、random_strsで繰り返しxorしているらしい。keyの正体は不明であるが、flagの最初の文字列が「picoCTF{」であることは確実なので、keyの部分に`picoCTF{`を当てることで、暗号化に使われたkeyの正体を探る。\
 以下、実行コード。
-```python
+```python solve.py
 from Crypto.Util.number import long_to_bytes, bytes_to_long
 
 ctxt=long_to_bytes(0x57657535570c1e1c612b3468106a18492140662d2f5967442a2960684d28017931617b1f3637)
