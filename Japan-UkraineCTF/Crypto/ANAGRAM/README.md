@@ -1,9 +1,9 @@
 # ANAGRAM:Crypto
 
-下の言葉からセキュリティのキーワードを答えよ。\
-**Rice of Titanic**\
-ーーーーーーーーーーーーーーーーーーーーーーーーーーー\
-Answer the security keyword inferred from the words below.\
+下の言葉からセキュリティのキーワードを答えよ。  
+**Rice of Titanic**  
+ーーーーーーーーーーーーーーーーーーーーーーーーーーー  
+Answer the security keyword inferred from the words below.  
 **Rice of Titanic**
 
 Point : 50
