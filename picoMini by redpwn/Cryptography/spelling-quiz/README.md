@@ -3,7 +3,7 @@
 I found the flag, but my brother wrote a program to encrypt all his text files. He has a spelling quiz study guide too, but I don't know if that helps.
 
 attachment
-* [public.zip](spelling-quiz/public.zip)
+* [public.zip](public.zip)
 
 # Solution
 
