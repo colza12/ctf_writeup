@@ -3,8 +3,8 @@
 To get the flag, you must break RSA not once, but three times!
 
 attachment
-* [public-key.txt](https://github.com/colza12/ctf_writeup/blob/main/picoMini%20by%20redpwn/triple-secure/public-key.txt)
-* [encrypt.py](https://github.com/colza12/ctf_writeup/blob/main/picoMini%20by%20redpwn/triple-secure/encrypt.py)
+* [public-key.txt](triple-secure/public-key.txt)
+* [encrypt.py](triple-secure/encrypt.py)
 
 # Solution
 
@@ -41,6 +41,7 @@ for d,n in key:
 
 print(long_to_bytes(c))
 ```
+flagが得られた。
 
 `picoCTF{1_gu3ss_tr1pl3_rs4_1snt_tr1pl3_s3cur3!!!!!!}`
 
