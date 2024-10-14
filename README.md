@@ -15,7 +15,6 @@
 * [stegano:Misc](Japan-UkraineCTF/Misc/stegano)
 * [world heritage:OSINT](Japan-UkraineCTF/OSINT/world%20heritage)
 * [lunch time:OSINT](Japan-UkraineCTF/OSINT/lunch%20time)
-* [shisa??:OSINT](Japan-UkraineCTF/OSINT/shisa%3F%3F)
 * [easy:Reverse Engineering](Japan-UkraineCTF/Reverse%20Engineering/easy)
 
 ## IERAE CTF 2024(22/09/2024)
