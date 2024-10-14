@@ -6,7 +6,7 @@ Can you crack the password to get the flag? Download the password checker [here]
 
 dictionary.txtを見てみると、パスワード候補が各行4桁ずつ書かれていた。PW Crack 4とほぼ同じであるが、dictionary.txtを読み込んでパスワード候補を改行区切りでリストに格納する必要がある。\
 以下、実行コード。
-```python
+```python solve.py
 import hashlib
 
 ### THIS FUNCTION WILL NOT HELP YOU FIND THE FLAG --LT ########################
