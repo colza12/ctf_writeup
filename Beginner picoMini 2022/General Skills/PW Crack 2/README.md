@@ -1,10 +1,10 @@
 # PW Crack 2:General Skills
 
-Can you crack the password to get the flag? Download the password checker [here](https://github.com/colza12/ctf_writeup/blob/main/Beginner%20picoMini%202022/PW%20Crack%202/level2.py) and you'll need the encrypted [flag](https://github.com/colza12/ctf_writeup/blob/main/Beginner%20picoMini%202022/PW%20Crack%202/level2.flag.txt.enc) in the same directory too.
+Can you crack the password to get the flag? Download the password checker [here](level2.py) and you'll need the encrypted [flag](level2.flag.txt.enc) in the same directory too.
 
 # Solution
 
-PW Crack 1とほぼ一緒と推察できる。なので、先にlevel2.pyのコードを確認。
+PW Crack 1とほぼ一緒であると推察できる。なので、先にlevel2.pyのコードを確認。
 ```python
 def level_2_pw_check():
     user_pw = input("Please enter correct password for flag: ")
@@ -18,6 +18,6 @@ def level_2_pw_check():
 user_pwがchr(0x64) + chr(0x65) + chr(0x37) + chr(0x36)であればフラグが得られるらしい。
 16進数を文字列に直すと、`de76`であるから、level2.pyを実行してパスワードde76を入力する。
 
-フラグが得られた。
+flagが得られた。
 
 `picoCTF{tr45h_51ng1ng_489dea9a}`
