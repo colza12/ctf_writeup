@@ -1,8 +1,8 @@
 # Picker II:Reverse Engineering
 
-Can you figure out how this program works to get the flag?\
-Connect to the program with netcat: `$ nc saturn.picoctf.net 57878`/
-The program's source code can be downloaded [here](https://github.com/colza12/ctf_writeup/blob/main/picoGym%20Exclusive/Picker%20II/picker-II.py).
+Can you figure out how this program works to get the flag?  
+Connect to the program with netcat: `$ nc saturn.picoctf.net 57878`  
+The program's source code can be downloaded [here](picker-II.py).
 
 # Solution
 
@@ -39,7 +39,7 @@ $ nc saturn.picoctf.net 53805
 picoCTF{f1l73r5_f41l_c0d3_r3f4c70r_m1gh7_5ucc33d_95d44590}
 'NoneType' object is not callable
 ```
-フラグが得られた。
+flagが得られた。
 
 `picoCTF{f1l73r5_f41l_c0d3_r3f4c70r_m1gh7_5ucc33d_95d44590}`
 
