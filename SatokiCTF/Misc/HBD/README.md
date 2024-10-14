@@ -35,6 +35,6 @@ func modify(r *http.Response) error {
 ```
 `HBD!Satoki!`をbodyのどこかに含めるとフラグが得られるようだ。  
 BurpSuiteを使ってRequestのGETメソッドをHBD!Satoki!メソッドに書き換える。  
-と、Responseでフラグが返ってきた。
+と、Responseでflagが返ってきた。
 
 `flag{tanjobi_anata_8ae01c4e}`
