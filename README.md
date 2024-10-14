@@ -42,7 +42,7 @@
 * [heap 1:Binary Exploitation](https://github.com/colza12/ctf_writeup/tree/main/picoCTF%202024/heap%201)
 * [format string 0:Binary Exploitation](https://github.com/colza12/ctf_writeup/tree/main/picoCTF%202024/format%20string%200)
 * [format string 1:Binary Exploitation](https://github.com/colza12/ctf_writeup/tree/main/picoCTF%202024/format%20string%201)
-* [Binary Search:General Skills](picoCTF%202024/Bianry%20Search)
+* [Binary Search:General Skills](picoCTF 2024/Bianry Search)
 ## picoCTF 2023
 [picoCTF 2023](https://github.com/colza12/ctf_writeup/tree/main/picoCTF%202023)
 * [money-ware:General Skills](https://github.com/colza12/ctf_writeup/tree/main/picoCTF%202023/money-ware)
