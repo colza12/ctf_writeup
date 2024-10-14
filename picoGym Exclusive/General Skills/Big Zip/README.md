@@ -1,7 +1,7 @@
 # Big Zip:General Skills
 
-Unzip this archive and find the flag.
-[Download zip file](https://github.com/colza12/ctf_writeup/blob/main/picoGym%20Exclusive/Big%20Zip/big-zip-files.zip)
+Unzip this archive and find the flag.  
+[Download zip file](big-zip-files.zip)
 
 # Solution
 
