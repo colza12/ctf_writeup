@@ -1,13 +1,13 @@
 # Luz Da Lua:rev
 
-The luac file is compiled and tested on Lua 5.4.7\
+The luac file is compiled and tested on Lua 5.4.7  
 `lua LuzDaLua.luac`
 
-attachment\
-[firectf_ierae-ctf-2024-prod-eh2j3_distfiles_luz-da-lua.tar.gz](https://github.com/colza12/ctf_writeup/blob/main/IERAE%20CTF%202024/rev/Luz%20Da%20Lua/firectf_ierae-ctf-2024-prod-eh2j3_distfiles_luz-da-lua.tar.gz)
+attachment  
+[firectf_ierae-ctf-2024-prod-eh2j3_distfiles_luz-da-lua.tar.gz](firectf_ierae-ctf-2024-prod-eh2j3_distfiles_luz-da-lua.tar.gz)
 
-Difficulty Level : easy\
-Point : 159\
+Difficulty Level : easy  
+Point : 159  
 Solved : 86
 
 # Solution
@@ -17,8 +17,8 @@ $ lua LuzDaLua.luac
 Input > 111111
 Wrong
 ```
-LuzDaLua.luacをデコンパイルする。\
-luaは互換性が非常に残念なことになっているため、バイナリファイルと同じバージョンのものを使う必要がある。実際、問題文にもコンパイルとテストを行ったのは、version5.4.7との記述がある。\
+LuzDaLua.luacをデコンパイルする。  
+luaは互換性が非常に残念なことになっているため、バイナリファイルと同じバージョンのものを使う必要がある。実際、問題文にもコンパイルとテストを行ったのは、version5.4.7との記述がある。  
 幸い、バージョンの関係なさそうな非常に便利なwebデコンパイラ([Lua Decompiler](https://luadec.metaworm.site/))を発見したので、これを利用した。
 ```lua
 -- filename: @/mnt/LuzDaLua.lua
@@ -91,12 +91,12 @@ end
 -- block#59:
 -- _ENV.print("Wrong")
 ```
-入力文字が28文字である必要があるらしい。さらに、大量のelseif文で各入力文字への条件が定められている。\
+入力文字が28文字である必要があるらしい。さらに、大量のelseif文で各入力文字への条件が定められている。  
 ```
 string.byte(input, 1) ~ 232 ~= 161
 ```
 これは1つ目のelseifを抜き出したものである。`~`は、xorを表し、`string.byte(input, 1)`で入力文字の1文字目をbyte変換して取り出している。1文字目と232をxorして161と一致するかどうかを判断している。
-xorの特徴として、`A xor B = C`のとき、`B xor C = A`が成り立つというのがある。これを利用して1文字ずつ条件を満たす文字を明かしていくと、以下の数字を導き出せる。\
+xorの特徴として、`A xor B = C`のとき、`B xor C = A`が成り立つというのがある。これを利用して1文字ずつ条件を満たす文字を明かしていくと、以下の数字を導き出せる。  
 ```
 73 69 82 65 69 123 76 117 97 95 49 115 95 83 48 95 51 100 117 99 28 116 49 111 110 97 108 125
 ```
@@ -105,7 +105,7 @@ cyberchefのfrom Decimalを使うと、
 IERAE{Lua_1s_S0_3duc t1onal}
 ```
 1つだけ可読文字ではないものが混入していたが、おそらく`Lua is so ecucational`という内容になるはずなので空白の部分には`a`または`4`が入ると推測できる。
-試してみると`4`の方であった。\
+試してみると`4`の方であった。  
 ```
 $ lua LuzDaLua.luac
 Input > IERAE{Lua_1s_S0_3duc4t1onal}
