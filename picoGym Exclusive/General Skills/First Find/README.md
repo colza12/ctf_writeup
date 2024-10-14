@@ -1,7 +1,7 @@
 # First Find:General Skills
 
 Unzip this archive and find the file named 'uber-secret.txt'
-[Download zip file](https://github.com/colza12/ctf_writeup/blob/main/picoGym%20Exclusive/First%20Find/files.zip)
+[Download zip file](files.zip)
 
 # Solution
 
