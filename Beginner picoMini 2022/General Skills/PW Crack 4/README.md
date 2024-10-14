@@ -7,7 +7,7 @@ Can you crack the password to get the flag? Download the password checker [here]
 PW Crack 3とほぼ同じで、パスワード候補の数が多いだけ。\
 level4.pyの中身を少しいじって実行する。\
 以下、実行コード。
-```python
+```python solve.py
 import hashlib
 
 ### THIS FUNCTION WILL NOT HELP YOU FIND THE FLAG --LT ########################
