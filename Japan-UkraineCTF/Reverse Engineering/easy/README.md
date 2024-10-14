@@ -4,8 +4,8 @@ What is the FLAG?
 
 ※Flag format: FLAG{ *** }
 
-attachment\
-[easy_bin](https://github.com/colza12/private_ctf_writeup/blob/main/Japan-UkraineCTF/Reverse%20Engineering/easy/easy_bin)
+attachment  
+[easy_bin](easy_bin)
 
 Point : 100
 
