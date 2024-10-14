@@ -10,17 +10,17 @@ I've hashed the flag so it can't be easily identified, but you get the idea? Che
 (hash value of flag)
 3390a5081ea4d44e3173eaf3e9695d9216d60cfcb617027355c95b3b7275e8e3
 
-attachment\
-[flag-options.csv](https://github.com/colza12/private_ctf_writeup/blob/main/Japan-UkraineCTF/Misc/hash/flag-options.csv)
+attachment  
+[flag-options.csv](flag-options.csv)
 
 Point : 50
 
 # Solution
-添付ファイルを見てみると、100個のフラグ候補が存在する。\
-問題文に掲載されているハッシュ値は、おそらくSHA-256であると推測できる。\
-フラグ候補を順番にSHA256でハッシュ化し、`3390a5081ea4d44e3173eaf3e9695d9216d60cfcb617027355c95b3b7275e8e3`に一致するものを探す。\
+添付ファイルを見てみると、100個のフラグ候補が存在する。  
+問題文に掲載されているハッシュ値は、おそらくSHA-256であると推測できる。  
+フラグ候補を順番にSHA256でハッシュ化し、`3390a5081ea4d44e3173eaf3e9695d9216d60cfcb617027355c95b3b7275e8e3`に一致するものを探す。  
 以下、実行コード。
-```python
+```python solve_hash.py
 import hashlib
 
 with open("flag-options.csv", 'r') as f:
