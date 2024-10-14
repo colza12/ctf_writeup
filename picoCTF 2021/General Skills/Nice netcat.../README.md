@@ -50,6 +50,6 @@ $ nc mercury.picoctf.net 22342
 125 
 10 
 ```
-10進数のASCIIっぽいので、変換ツールに投げてみるとフラグが得られた。
+10進数のASCIIっぽいので、変換ツールに投げてみるとflagが得られた。
 
 `picoCTF{g00d_k1tty!_n1c3_k1tty!_5fb5e51d}`
