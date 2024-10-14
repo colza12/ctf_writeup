@@ -1,11 +1,11 @@
 # HashingJobApp:General Skills
 
-If you want to hash with the best, beat this test!\
+If you want to hash with the best, beat this test!  
 `nc saturn.picoctf.net 57702`
 
 # Solution
 
-問題文のとおりにプロンプトにコピペする。と、表示された文字列のMD5ハッシュ値を答えろとの指示があるため、MD5ハッシュ値を求めて入力する。３回繰り返すとフラグが得られた。
+問題文のとおりにプロンプトに`nc saturn.picoctf.net 57702`をコピペして実行する。と、表示された文字列のMD5ハッシュ値を答えろとの指示があるため、MD5ハッシュ値を求めて入力する。３回繰り返すとflagが得られた。
 ```
 $ nc saturn.picoctf.net 59114
 Please md5 hash the text between quotes, excluding the quotes: 'log cabins'
