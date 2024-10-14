@@ -1,8 +1,8 @@
 # ASCII FTW:Reverse Engineering
 
-This program has constructed the flag using hex ascii values.\
-Identify the flag text by disassembling the program.\
-You can download the file from [here](https://github.com/colza12/ctf_writeup/blob/main/picoGym%20Exclusive/ASCII%20FTW/asciiftw).
+This program has constructed the flag using hex ascii values.  
+Identify the flag text by disassembling the program.  
+You can download the file from [here](asciiftw).
 
 # Solution
 
@@ -81,7 +81,7 @@ asciiftwを実行可能にし、gdbでmainを逆アセンブルする。
 ```
 0x70 0x69 0x63 0x6f 0x43 0x54 0x46 0x7b 0x41 0x53 0x43 0x49 0x49 0x5f 0x49 0x53 0x5f 0x45 0x41 0x53 0x59 0x5f 0x38 0x39 0x36 0x30 0x46 0x30 0x41 0x46 0x7d
 ```
-フラグが得られた。
+flagが得られた。
 
 `picoCTF{ASCII_IS_EASY_8960F0AF}`
 
