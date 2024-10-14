@@ -3,11 +3,11 @@
 Trust me. If this problem is too difficult for you, I don't mind you burying me in the ground!
 nc 104.199.135.28 33334
 
-attachment\
-[firectf_ierae-ctf-2024-prod-eh2j3_distfiles_this-is-warmup.tar.gz](https://github.com/colza12/ctf_writeup/blob/main/IERAE%20CTF%202024/pwn/This%20is%20warmup/firectf_ierae-ctf-2024-prod-eh2j3_distfiles_this-is-warmup.tar.gz)
+attachment  
+[firectf_ierae-ctf-2024-prod-eh2j3_distfiles_this-is-warmup.tar.gz](firectf_ierae-ctf-2024-prod-eh2j3_distfiles_this-is-warmup.tar.gz)
 
-Difficulty Level : warmup\
-Point : 193\
+Difficulty Level : warmup  
+Point : 193  
 Solved : 48
 
 # Solution
@@ -47,7 +47,7 @@ int main() {
     exit(1);
   }
 ```
-非常に親切に、セグメンテーションフォルトを起こすとフラグが取れることと、整数オーバーフローが起こる場所が記載されている。\
+非常に親切に、セグメンテーションフォルトを起こすとフラグが取れることと、整数オーバーフローが起こる場所が記載されている。  
 愚直に、大きい値を入力してみるが、フラグは出てこなかった。
 ```
 $ nc 104.199.135.28 33334
@@ -55,7 +55,7 @@ Enter number of rows: 2
 Enter number of cols: 9999999999999999999999999999999999999999999999999999999999999999
 Too large!
 ```
-`ncol`はlong long intと定義されているため、long long intの最大値周辺を攻める方針で、指示通りにオーバーフローさせる。\
+`ncol`はlong long intと定義されているため、long long intの最大値周辺を攻める方針で、指示通りにオーバーフローさせる。  
 long long intの最大値は、9223372036854775807なので、9223372036854775808以上の数字を入力していく。
 ```
 $ nc 104.199.135.28 33334
@@ -69,7 +69,8 @@ Enter number of cols: 9223372036854775809
 Well done!
 IERAE{s33?n07_41w4y5_1_cr3a73_d1ff1cu1t_pr0b13m5}
 ```
-さらに大きな数値でも試してみたが、`9223372039999999999`まで大きくなるとプログラムが動かなくなり、さらに大きくすると、`Too large!`と出力されるようになった。\
+さらに大きな数値でも試してみたが、`9223372039999999999`まで大きくなるとプログラムが動かなくなり、さらに大きくすると、`Too large!`と出力されるようになった。
+
 flagが得られた。
 
 `IERAE{s33?n07_41w4y5_1_cr3a73_d1ff1cu1t_pr0b13m5}`
