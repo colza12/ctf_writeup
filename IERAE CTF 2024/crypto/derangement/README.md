@@ -1,13 +1,13 @@
 # derangement:crypto
 
-I've made a secret magic string, perfectly encrypted!\
+I've made a secret magic string, perfectly encrypted!  
 `nc 35.221.153.165 55555`
 
-attachment\
-[firectf_ierae-ctf-2024-prod-eh2j3_distfiles_derangement.tar.gz](https://github.com/colza12/ctf_writeup/blob/main/IERAE%20CTF%202024/crypto/derangement/firectf_ierae-ctf-2024-prod-eh2j3_distfiles_derangement.tar.gz)
+attachment  
+[firectf_ierae-ctf-2024-prod-eh2j3_distfiles_derangement.tar.gz](firectf_ierae-ctf-2024-prod-eh2j3_distfiles_derangement.tar.gz)
 
-Difficulty Level : warmup\
-Point : 149\
+Difficulty Level : warmup  
+Point : 149  
 Solved : 106 
 
 # Solution
@@ -97,8 +97,8 @@ def main():
 if __name__ == "__main__":
     main()
 ```
-接続は300秒で切れるようになっている。また、hintで出力される謎文字列は、15文字のmagic wordの文字列をランダムで並べ替えた後、magic wordと1文字ずつ比較して一致しないものとなっていることが分かる。\
-出力される文字列を取得して、1度でもn番目に出力された文字は、そのn番目の文字候補から削除していく方式で1度も出力されていない文字を特定し、残った文字を並べて入力することによって、フラグを出力させる。\
+接続は300秒で切れるようになっている。また、hintで出力される謎文字列は、15文字のmagic wordの文字列をランダムで並べ替えた後、magic wordと1文字ずつ比較して一致しないものとなっていることが分かる。  
+出力される文字列を取得して、1度でもn番目に出力された文字は、そのn番目の文字候補から削除していく方式で1度も出力されていない文字を特定し、残った文字を並べて入力することによって、フラグを出力させる。  
 以下、実行コード。(1,2文字目の文字候補がうまく出力できなかったため、hint取得とmagic word推定は別のコードにした)
 ```python:solve2.py
 import re
