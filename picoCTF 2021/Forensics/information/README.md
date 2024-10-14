@@ -1,6 +1,6 @@
 # information:Forensics
 
-Files can always be changed in a secret way. Can you find the flag? [cat.jpg](https://github.com/colza12/ctf_writeup/blob/main/picoCTF%202021/information/cat.jpg)
+Files can always be changed in a secret way. Can you find the flag? [cat.jpg](cat.jpg)
 
 # Solution
 
@@ -12,7 +12,7 @@ Files can always be changed in a secret way. Can you find the flag? [cat.jpg](ht
  </rdf:Description>
 ```
 
-licenseのところが気になるので、base64デコードしてみる、とフラグが得られた。
+licenseのところが気になるので、base64デコードしてみる、とflagが得られた。
 
 `picoCTF{the_m3tadata_1s_modified}`
 
