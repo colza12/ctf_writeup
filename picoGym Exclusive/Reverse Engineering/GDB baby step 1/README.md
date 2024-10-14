@@ -1,7 +1,7 @@
 # GDB baby step 1:Reverse Engineering
 
-Can you figure out what is in the `eax` register at the end of the main function? Put your answer in the picoCTF flag format: `picoCTF{n}` where `n` is the contents of the `eax` register in the decimal number base. If the answer was `0x11` your flag would be `picoCTF{17}`.\
-Disassemble [this](https://github.com/colza12/ctf_writeup/blob/main/picoGym%20Exclusive/GDB%20baby%20step%201/debugger0_a).
+Can you figure out what is in the `eax` register at the end of the main function? Put your answer in the picoCTF flag format: `picoCTF{n}` where `n` is the contents of the `eax` register in the decimal number base. If the answer was `0x11` your flag would be `picoCTF{17}`.  
+Disassemble [this](debugger0_a).
 
 # Solution
 
@@ -32,6 +32,8 @@ Intel記法が良ければ`set disassembly-flavor intel`を実行。
 0x000000000000113e <+21>:    ret
 ```
 eaxレジスタに0x86342を格納していることが分かる。
+
+flagが得られた。
 
 `picoCTF{549698}`
 
