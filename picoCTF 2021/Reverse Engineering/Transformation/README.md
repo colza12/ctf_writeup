@@ -1,6 +1,6 @@
 # Transformation:Reverse Engineering
 
-I wonder what this really is... [enc](https://github.com/colza12/ctf_writeup/blob/main/picoCTF%202021/Transformation/enc) `''.join([chr((ord(flag[i]) << 8) + ord(flag[i + 1])) for i in range(0, len(flag), 2)])`
+I wonder what this really is... [enc](enc) `''.join([chr((ord(flag[i]) << 8) + ord(flag[i + 1])) for i in range(0, len(flag), 2)])`
 
 # Solution
 
@@ -20,6 +20,6 @@ encをテキストエディタで開く。
 0011001100110100 0110010001011111 0110111101100110 0101111100111000 0101111101100101
 0011000100110100 0011000101100001 0011000001100110 0011011101111101
 ```
-これを上下8bitsずつに分け、文字に直すと、
+これを上下8bitsずつに分け、文字に直すと、flagが得られた。
 
 `picoCTF{16_bits_inst34d_of_8_e141a0f7}`
