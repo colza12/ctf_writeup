@@ -1,6 +1,6 @@
 # caesar:Cryptography
 
-Decrypt this [message](https://github.com/colza12/ctf_writeup/blob/main/picoCTF%202019/caesar/ciphertext).
+Decrypt this [message](ciphertext).
 
 # Solution
 
