@@ -1,6 +1,6 @@
 # PW Crack 3:General Skills
 
-Can you crack the password to get the flag? Download the password checker [here](https://github.com/colza12/ctf_writeup/blob/main/Beginner%20picoMini%202022/PW%20Crack%203/level3.py) and you'll need the encrypted [flag](https://github.com/colza12/ctf_writeup/blob/main/Beginner%20picoMini%202022/PW%20Crack%203/level3.flag.txt.enc) and the [hash](https://github.com/colza12/ctf_writeup/blob/main/Beginner%20picoMini%202022/PW%20Crack%203/level3.hash.bin) in the same directory too. There are 7 potential passwords with 1 being correct. You can find these by examining the password checker script.
+Can you crack the password to get the flag? Download the password checker [here](level3.py) and you'll need the encrypted [flag](level3.flag.txt.enc) and the [hash](level3.hash.bin) in the same directory too. There are 7 potential passwords with 1 being correct. You can find these by examining the password checker script.
 
 # Solution
 
@@ -14,13 +14,13 @@ def hash_pw(pw_str):
     return m.digest()
 ```
 パスワードの候補は７個しかないので、順番に試しても時間はかからない。パスワードは`87ab`であった。\
-level3.pyを実行して、パスワード87abを入力するとパスワードが得られた。
+level3.pyを実行して、パスワード87abを入力するとflagが得られた。
 
 `picoCTF{m45h_fl1ng1ng_cd6ed2eb}`
 
 level3.pyの中身を少しいじってフラグを取得する方法もある。(パスワード候補が多い場合は効率的)
 以下、実行コード。
-```python
+```python　solve.py
 import hashlib
 
 ### THIS FUNCTION WILL NOT HELP YOU FIND THE FLAG --LT ########################
