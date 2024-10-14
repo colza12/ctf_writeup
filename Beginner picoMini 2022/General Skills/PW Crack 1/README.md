@@ -1,6 +1,6 @@
 # PW Crack 1:General Skills
 
-Can you crack the password to get the flag? Download the password checker [here](https://github.com/colza12/ctf_writeup/blob/main/Beginner%20picoMini%202022/PW%20Crack%201/level1.py) and you'll need the encrypted [flag](https://github.com/colza12/ctf_writeup/blob/main/Beginner%20picoMini%202022/PW%20Crack%201/level1.flag.txt.enc) in the same directory too.
+Can you crack the password to get the flag? Download the password checker [here](level1.py) and you'll need the encrypted [flag](level1.flag.txt.enc) in the same directory too.
 
 # Solution
 
@@ -18,7 +18,7 @@ def level_1_pw_check():
 ```
 とある。user_pwが1e1aであればフラグが得られるらしいので、もう一度level1.pyを実行してパスワード1e1aを入力する。
 
-フラグが得られた。
+flagが得られた。
 
 `picoCTF{545h_r1ng1ng_fa343060}`
 
