@@ -1,7 +1,7 @@
 # GDB baby step 4:Reverse Engineering
 
-`main` calls a function that multiplies `eax` by a constant. The flag for this challenge is that constant in decimal base. If the constant you find is 0x1000, the flag will be `picoCTF{4096}`.\
-Debug [this](https://github.com/colza12/ctf_writeup/blob/main/picoGym%20Exclusive/GDB%20baby%20step%204/debugger0_d).
+`main` calls a function that multiplies `eax` by a constant. The flag for this challenge is that constant in decimal base. If the constant you find is 0x1000, the flag will be `picoCTF{4096}`.  
+Debug [this](debugger0_d).
 
 # Solution
 
@@ -26,7 +26,7 @@ Debug [this](https://github.com/colza12/ctf_writeup/blob/main/picoGym%20Exclusiv
 0x000000000040111a <+20>:    pop    rbp
 0x000000000040111b <+21>:    ret
 ```
-`imal eax,eax,0x3269`とあるので、フラグは0x3269を10進数にしたもの。
+`imal eax,eax,0x3269`とあるので、flagは0x3269を10進数にしたもの。
 
 `picoCTF{12905}`
 
