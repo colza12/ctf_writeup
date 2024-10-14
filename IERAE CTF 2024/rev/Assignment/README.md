@@ -2,17 +2,17 @@
 
 Assignment is the root of everything in procedural programs.
 
-attachment\
-[firectf_ierae-ctf-2024-prod-eh2j3_distfiles_assignment.tar.gz](https://github.com/colza12/ctf_writeup/blob/main/IERAE%20CTF%202024/rev/Assignment/firectf_ierae-ctf-2024-prod-eh2j3_distfiles_assignment.tar.gz)
+attachment  
+[firectf_ierae-ctf-2024-prod-eh2j3_distfiles_assignment.tar.gz](firectf_ierae-ctf-2024-prod-eh2j3_distfiles_assignment.tar.gz)
 
-Difficulty Level : warmup\
-Point : 140\
+Difficulty Level : warmup  
+Point : 140  
 Solved : 127 
 
 # Solution
-添付ファイルには、chalというファイルのみ入っていた。\
-テキストエディタで確認してみるとELFファイルであることが分かるので、pwngdbを使って解析していく。\
-`layout asm`でアセンブリのほぼ全てが表示される程度の短さなので、逆アセンブル作業は必要ない。(ただし、`layout asm`を実行するとコピペができない)\
+添付ファイルには、chalというファイルのみ入っていた。  
+テキストエディタで確認してみるとELFファイルであることが分かるので、pwngdbを使って解析していく。  
+`layout asm`でアセンブリのほぼ全てが表示される程度の短さなので、逆アセンブル作業は必要ない。(ただし、`layout asm`を実行するとコピペができない)  
 ざっくりと見ると、明らかにフラグを1文字ずつ格納している部分がある。
 ```
    0x0000000000001158 <+15>:    mov    BYTE PTR [rip+0x2efd],0x33        # 0x405c <flag+28>
@@ -57,7 +57,7 @@ pwndbg> r
 pwndbg> x/s $rip+0x2e0f
 0x55555555804e <flag+14>:       "d0m_str1ng_5a9354c}"
 ```
-フラグの後半だけが出力された。前半部分を探すのは少し手間だったため、ripに格納するasciiコードを手動で並べ替え、cyberchefでfrom Hexしてしまった。(デコンパイラを使うと、フラグがそのまま出力される。)\
+フラグの後半だけが出力された。前半部分を探すのは少し手間だったため、ripに格納するasciiコードを手動で並べ替え、cyberchefでfrom Hexしてしまった。(デコンパイラを使うと、フラグがそのまま出力される。)  
 flagが得られた。
 
 `IERAE{s0me_r4nd0m_str1ng_5a9354c}`
