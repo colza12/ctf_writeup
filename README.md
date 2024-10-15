@@ -75,8 +75,8 @@
 * [The Numbers:Cryptography](picoCTF%202019/Cryptography/The%20Numbers)
 * [2Warm:General Skills](picoCTF%202019/General%20Skills/2Warm)
 * [Glory of the Garden:Forensics](picoCTF%202019/Forensics/Glory%20of%20the%20Garden)
-* [First Grep](picoCTF%202019/General%20Skills/First%20Grep)
-* [strings it](picoCTF%202019/General%20Skills/strings_it)
+* [First Grep:General Skills](picoCTF%202019/General%20Skills/First%20Grep)
+* [strings it:General Skills](picoCTF%202019/General%20Skills/strings_it)
 ## picoGym Exculusive
 [picoGym Exculusive](picoGym%20Exclusive)
 * [ASCII Numbers:General Skills](picoGym%20Exclusive/General%20Skills/ASCII%20Numbers)
