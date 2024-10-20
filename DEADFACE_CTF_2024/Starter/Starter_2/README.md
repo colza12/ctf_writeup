@@ -11,7 +11,6 @@ There is a post titled "Where to even get started". Submit the flag as the usern
 Example: flag{hackyboi_0615}
    
 Point : 2  
-Solved :   
 Author : syyntax
 
 # Solution
