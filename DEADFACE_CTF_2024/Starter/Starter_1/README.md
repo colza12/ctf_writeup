@@ -7,7 +7,6 @@ Welcome to DEADFACE CTF! We're very happy to have you join us and participate in
 Submit the flag located on the *Rules and Code of Conduct* page. By entering the flag, you acknowledge the rules and code of conduct and agree to adhere to them. 
 
 Point : 1  
-Solved :   
 Author : syyntax
 
 # Solution
