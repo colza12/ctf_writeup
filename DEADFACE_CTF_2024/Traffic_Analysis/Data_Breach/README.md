@@ -10,7 +10,6 @@ Submit the flag as `flag{flag-text}`.
 SHA1: `48744d0b724fc30f660a7953b5e974320b60a47c`
 
 Point : 25  
-Solved :   
 Author : RP-01?  
 
 # Solution
