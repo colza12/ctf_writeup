@@ -7,7 +7,6 @@ Submit the flag as `flag{flag-text}`
 [TrendyTrove](https://trendytrove.deadface.io/)
 
 Point : 15  
-Solved :   
 Author : syyntax
 
 # Solution
