@@ -1,4 +1,13 @@
 # ctf_writeup
+## DEADFACE CTF 2024(18/10/2024)
+[DEADFACE CTF 2024](DEADFACE_CTF_2024)
+* [Starter 1:Starter](DEADFACE_CTF_2024/Starter/Starter_1)
+* [Starter 2:Starter](DEADFACE_CTF_2024/Starter/Starter_2)
+* [Something in the Dark:Steganography](DEADFACE_CTF_2024/Steganography/Something_in_the_Dark)
+* [Ides-le Talk:Cryptography](DEADFACE_CTF_2024/Cryptography/Ides-le_Talk)
+* [Data Breach:Traffic Analysis](DEADFACE_CTF_2024/Traffic_Analysis/Data_Breach)
+* [Let Me In:TrendyTrove](DEADFACE_CTF_2024/TrendyTrove/Let_Me_In)
+
 ## Japan-UkraineCTF(02/10/2024)
 [Japan-UkraineCTF](Japan-UkraineCTF)
 * [Japanese Kanji:Brain Training](Japan-UkraineCTF/Brain%20Training/Japanese%20Kanji)
