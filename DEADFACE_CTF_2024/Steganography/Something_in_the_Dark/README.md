@@ -8,7 +8,6 @@ Submit the flag as `flag{flag_text_here}`.
 SHA1: `aa80a85127e85e410fdb6a207396fe7a7d0f7ac1`
 
 Point : 30  
-Solved :   
 Author : syyntax
 
 # Solution
