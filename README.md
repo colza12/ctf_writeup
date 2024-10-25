@@ -52,6 +52,7 @@
 * [format string 1:Binary Exploitation](picoCTF%202024/Binary%20Exploitation/format%20string%201)
 * [Binary Search:General Skills](picoCTF%202024/General%20Skills/Binary%20Search)
 * [Super SSH:General Skills](picoCTF%202024/General%20Skills/Super_SSH)
+* [format string 3:Binary Exploitation](picoCTF%202024/Binary%20Exploitation/format_string_3)
 ## picoCTF 2023
 [picoCTF 2023](picoCTF%202023)
 * [money-ware:General Skills](picoCTF%202023/General%20Skills/money-ware)
