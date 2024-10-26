@@ -1,4 +1,17 @@
 # ctf_writeup
+## Hack The Boo 2024(24/10/2024)
+[Hack_The_Boo_2024](Hack_The_Boo_2024)
+* [El Pipo:Pwn](Hack_The_Boo_2024/Pwn/El_Pipo)
+* [El Mundo:Pwn](Hack_The_Boo_2024/Pwn/El_Mundo)
+* 
+## Hack The Boo 2024 - Practice(21/10/2024)
+[Hack The Boo 2024 - Practice](Hack_The_Boo_2024_Practice)
+* [Mathematricks:Pwn](Hack_The_Boo_2024_Practice/Pwn/Mathematricks)
+* [Que onda:Pwn](Hack_The_Boo_2024_Practice/Pwn/Que_onda)
+* [El Teteo:Pwn](Hack_The_Boo_2024_Practice/Pwn/El_Teteo)
+* [Graverobber:Reversing](Hack_The_Boo_2024_Practice/Reversing/Graverobber)
+* [SpookyPass:Reversing](Hack_The_Boo_2024_Practice/Reversing/SpookyPass)
+
 ## DEADFACE CTF 2024(18/10/2024)
 [DEADFACE CTF 2024](DEADFACE_CTF_2024)
 * [Starter 1:Starter](DEADFACE_CTF_2024/Starter/Starter_1)
