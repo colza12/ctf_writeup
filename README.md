@@ -3,7 +3,7 @@
 [Hack_The_Boo_2024](Hack_The_Boo_2024)
 * [El Pipo:Pwn](Hack_The_Boo_2024/Pwn/El_Pipo)
 * [El Mundo:Pwn](Hack_The_Boo_2024/Pwn/El_Mundo)
-* 
+
 ## Hack The Boo 2024 - Practice(21/10/2024)
 [Hack The Boo 2024 - Practice](Hack_The_Boo_2024_Practice)
 * [Mathematricks:Pwn](Hack_The_Boo_2024_Practice/Pwn/Mathematricks)
