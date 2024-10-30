@@ -68,6 +68,7 @@
 * [format string 3:Binary Exploitation](picoCTF%202024/Binary%20Exploitation/format_string_3)
 * [heap 2:Binary Exploitation](picoCTF%202024/Binary%20Exploitation/heap_2)
 * [Time Machine:General Skills](picoCTF%202024/General%20Skills/Time_Machine)
+* [endianness:General Skills](picoCTF%202024/General%20Skills/endianness)
 ## picoCTF 2023
 [picoCTF 2023](picoCTF%202023)
 * [money-ware:General Skills](picoCTF%202023/General%20Skills/money-ware)
