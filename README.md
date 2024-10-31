@@ -73,6 +73,7 @@
 [picoCTF 2023](picoCTF%202023)
 * [money-ware:General Skills](picoCTF%202023/General%20Skills/money-ware)
 * [two-sum:Binary Exploitation](picoCTF%202023/Binary%20Exploitation/two-sum)
+* [useless:General Skills](picoCTF%202023/General%20Skills/useless)
 ## picoCTF 2022
 [picoCTF 2022](picoCTF%202022)
 * [buffer overflow 0:Binary Exploitation](picoCTF%202022/Binary%20Exploitation/buffer%20overflow%200)
