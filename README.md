@@ -84,6 +84,7 @@
 * [file-run1:Reverse Engineering](picoCTF%202022/Reverse%20Engineering/file-run1)
 * [buffer overflow 2:Binary Exploitation](picoCTF%202022/Binary%20Exploitation/buffer%20overflow%202)
 * [CVE-XXXX-XXXX:Binary Exploitation](picoCTF%202022/Binary%20Exploitation/CVE-XXXX-XXXX)
+* [x-sixty-what:Binary Exploitation](picoCTF%202022/Binary%20Exploitation/x-sixty-what)
 ## picoCTF 2021
 [picoCTF 2021](picoCTF%202021)
 * [Obedient Cat:General Skills](picoCTF%202021/General%20Skills/Obedient%20Cat)
