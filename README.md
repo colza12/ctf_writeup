@@ -72,6 +72,7 @@
 * [heap 3:Binary Exploitation](picoCTF%202024/Binary%20Exploitation/heap_3)
 * [WebDecode:Web Exploitation](picoCTF%202024/Web_Exploitation/WebDecode)
 * [Unminify:Web Exploitation](picoCTF%202024/Web_Exploitation/Unminify)
+* [IntroToBurp:Web Exploitation](picoCTF%202024/Web_Exploitation/IntroToBurp)
 ## picoCTF 2023
 [picoCTF 2023](picoCTF%202023)
 * [money-ware:General Skills](picoCTF%202023/General%20Skills/money-ware)
