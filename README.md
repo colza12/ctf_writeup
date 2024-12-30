@@ -1,4 +1,13 @@
 # ctf_writeup
+## ASUSN CTF 2(28/12/2024)
+[ASUSN CTF 2](ASUSN_CTF2)
+* [SQL寿司:Web](ASUSN_CTF2/Web/SQL寿司)
+* [プロンプトインコ:LLM](ASUSN_CTF2/LLM/プロンプトインコ)
+* [ガバガバずんだもん:LLM](ASUSN_CTF2/LLM/ガバガバずんだもん)
+* [最悪エディター1:Misc](ASUSN_CTF2/Misc/最悪エディター1)
+* [フラグ絵文字:Misc](ASUSN_CTF2/Misc/フラグ絵文字)
+* [フラッシュ機械語リターンズ:Misc](ASUSN_CTF2/Reversing/フラッシュ機械語リターンズ)
+
 ## Hack The Boo 2024(24/10/2024)
 [Hack_The_Boo_2024](Hack_The_Boo_2024)
 * [El Pipo:Pwn](Hack_The_Boo_2024/Pwn/El_Pipo)
