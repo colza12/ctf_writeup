@@ -82,6 +82,7 @@
 * [WebDecode:Web Exploitation](picoCTF%202024/Web_Exploitation/WebDecode)
 * [Unminify:Web Exploitation](picoCTF%202024/Web_Exploitation/Unminify)
 * [IntroToBurp:Web Exploitation](picoCTF%202024/Web_Exploitation/IntroToBurp)
+* [Bookmarklet:Web Exploitation](picoCTF%202024/Web_Exploitation/Bookmarklet)
 ## picoCTF 2023
 [picoCTF 2023](picoCTF%202023)
 * [money-ware:General Skills](picoCTF%202023/General%20Skills/money-ware)
