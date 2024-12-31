@@ -96,6 +96,7 @@
 * [buffer overflow 2:Binary Exploitation](picoCTF%202022/Binary%20Exploitation/buffer%20overflow%202)
 * [CVE-XXXX-XXXX:Binary Exploitation](picoCTF%202022/Binary%20Exploitation/CVE-XXXX-XXXX)
 * [x-sixty-what:Binary Exploitation](picoCTF%202022/Binary%20Exploitation/x-sixty-what)
+* [RPS:Binary Exploitation](picoCTF%202022/Binary%20Exploitation/RPS)
 ## picoCTF 2021
 [picoCTF 2021](picoCTF%202021)
 * [Obedient Cat:General Skills](picoCTF%202021/General%20Skills/Obedient%20Cat)
