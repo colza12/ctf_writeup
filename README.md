@@ -98,6 +98,7 @@
 * [x-sixty-what:Binary Exploitation](picoCTF%202022/Binary%20Exploitation/x-sixty-what)
 * [RPS:Binary Exploitation](picoCTF%202022/Binary%20Exploitation/RPS)
 * [flag leak:Binary Exploitation](picoCTF%202022/Binary%20Exploitation/flag_leak)
+* [Inspect HTML:Web Exploitation](picoCTF%202022/Web_Exploitation/Inspect_HTML)
 ## picoCTF 2021
 [picoCTF 2021](picoCTF%202021)
 * [Obedient Cat:General Skills](picoCTF%202021/General%20Skills/Obedient%20Cat)
