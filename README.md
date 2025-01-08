@@ -128,6 +128,7 @@
 * [First Grep:General Skills](picoCTF%202019/General%20Skills/First%20Grep)
 * [strings it:General Skills](picoCTF%202019/General%20Skills/strings_it)
 * [vault-door-training:Reverse Engineering](picoCTF%202019/Reverse_Engineering/vault-door-training)
+* [dont-use-client-side:Web Exploitation](picoCTF%202019/Web_Exploitation/dont-use-client-side)
 ## picoGym Exculusive
 [picoGym Exculusive](picoGym%20Exclusive)
 * [ASCII Numbers:General Skills](picoGym%20Exclusive/General%20Skills/ASCII%20Numbers)
