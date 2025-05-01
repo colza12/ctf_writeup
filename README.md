@@ -66,6 +66,10 @@
 * [python8:Misc](SatokiCTF/Misc/python8)
 
 # permanent
+## picoCTF 2025
+[picoCTF 2025](picoCTF_2025)
+* [PIE TIME:Binary Exploitation](picoCTF_2025/Binary_Exploitation/PIE_TIME)
+
 ## picoCTF 2024
 [picoCTF 2024](picoCTF%202024)
 * [heap 0:Binary Exploitation](picoCTF%202024/Binary%20Exploitation/heap%200)
