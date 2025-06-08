@@ -108,6 +108,7 @@
 * [basic-file-exploit:Binary Exploitation](picoCTF%202022/Binary%20Exploitation/basic-file-exploit)
 * [Includes:Web Exploitation](picoCTF%202022/Web_Exploitation/Includes)
 * [buffer overflow 3:Binary Exploitation](picoCTF%202022/Binary%20Exploitation/buffer_overflow_3)
+* [wine:Binary Exploitation](picoCTF%202022/Binary%20Exploitation/wine)
 ## picoCTF 2021
 [picoCTF 2021](picoCTF%202021)
 * [Obedient Cat:General Skills](picoCTF%202021/General%20Skills/Obedient%20Cat)
