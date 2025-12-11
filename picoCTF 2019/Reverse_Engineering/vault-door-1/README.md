@@ -66,7 +66,7 @@ class VaultDoor1 {
     }
 }
 ```
-The password is hard-coded by character using `password.charAt(n)` with index-based access. 
+The password is hard-coded by character using `password.charAt(n)` with index-based access.  
 Sort the index in ascending order and add `picoCTF{` at the beginning and `}` at the end.
 
 Got the flag!
