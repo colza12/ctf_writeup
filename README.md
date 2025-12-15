@@ -144,6 +144,7 @@
 * [vault-door-1:Reverse Engineering](picoCTF%202019/Reverse_Engineering/vault-door-1)
 * [vault-door-3:Reverse Engineering](picoCTF%202019/Reverse_Engineering/vault-door-3)
 * [vault-door-4:Reverse Engineering](picoCTF%202019/Reverse_Engineering/vault-door-4)
+* [vault-door-5:Reverse Engineering](picoCTF%202019/Reverse_Engineering/vault-door-5)
 ## picoGym Exculusive
 [picoGym Exculusive](picoGym%20Exclusive)
 * [ASCII Numbers:General Skills](picoGym%20Exclusive/General%20Skills/ASCII%20Numbers)
