@@ -95,4 +95,4 @@ When converted to binary, they become as follows:
 
 Got the flag!
 
-picoCTF{A_b1t_0f_b1t_sh1fTiNg_dc80e28124}`
+`picoCTF{A_b1t_0f_b1t_sh1fTiNg_dc80e28124}`
