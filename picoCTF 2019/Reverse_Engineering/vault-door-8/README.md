@@ -103,7 +103,7 @@ To trace the processing of the `scramble` function, assuming that the final valu
 Keep the processing of the `switchBits` function unchanged, and reverse the processing of `scramble` to work backward and calculate the inverse of `expected`.
 
 Execution code below:
-```python
+```python solve.py
 expected = [
         0xF4, 0xC0, 0x97, 0xF0, 0x77, 0x97, 0xC0, 0xE4, 
         0xF0, 0x77, 0xA4, 0xD0, 0xC5, 0x77, 0xF4, 0x86, 
