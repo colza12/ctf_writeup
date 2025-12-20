@@ -155,6 +155,7 @@
 * [asm4:Reverse Engineering](picoCTF%202019/Reverse_Engineering/asm4)
 * [reverse_cipher:Reverse Engineering](picoCTF%202019/Reverse_Engineering/reverse_cipher)
 * [droids0:Reverse Engineering](picoCTF%202019/Reverse_Engineering/droids0)
+* [droids1:Reverse Engineering](picoCTF%202019/Reverse_Engineering/droids1)
 ## picoGym Exculusive
 [picoGym Exculusive](picoGym%20Exclusive)
 * [ASCII Numbers:General Skills](picoGym%20Exclusive/General%20Skills/ASCII%20Numbers)
