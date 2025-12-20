@@ -200,7 +200,7 @@ In other words, the values in DAT_00101a85 are being XORed sequentially with "ag
 Since XORing with the same value twice restores the original value, the 26-byte data in DAT_00101a85 is XORed using the unscramble function.
 
 Execution code below:
-```python
+```python solve.py
 from pwn import *
 data = "110e02062d392f0807001d49031215470f431a1001081a04091a"
 key = "againmissing"
