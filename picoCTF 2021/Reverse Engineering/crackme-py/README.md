@@ -1,6 +1,6 @@
 # crackme-py : Reverse Engineering
 
-[crackme_gen.py](crackme_gen.py)
+[crackme.py](crackme.py)
 
 Author : syreal
 
