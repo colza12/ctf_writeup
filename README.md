@@ -158,6 +158,7 @@
 * [droids1:Reverse Engineering](picoCTF%202019/Reverse_Engineering/droids1)
 * [droids2:Reverse Engineering](picoCTF%202019/Reverse_Engineering/droids2)
 * [droids3:Reverse Engineering](picoCTF%202019/Reverse_Engineering/droids3)
+* [droids4:Reverse Engineering](picoCTF%202019/Reverse_Engineering/droids4)
 ## picoGym Exculusive
 [picoGym Exculusive](picoGym%20Exclusive)
 * [ASCII Numbers:General Skills](picoGym%20Exclusive/General%20Skills/ASCII%20Numbers)
