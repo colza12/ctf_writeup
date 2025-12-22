@@ -3,7 +3,7 @@
 Best Stuff - Cheap Stuff, Buy Buy Buy...  
 Store Instance: [source](source). The shop is open for business at `nc mercury.picoctf.net 10337`.
 
-Author : Dylan McGuire
+Author : thelshell
 
 # Solution
 
