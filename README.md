@@ -132,6 +132,7 @@
 * [Binary Gauntlet 0:Binary Exploitation](picoCTF%202021/Binary%20Exploitation/Binary_Gauntlet_0)
 * [Binary Gauntlet 1:Binary Exploitation](picoCTF%202021/Binary%20Exploitation/Binary_Gauntlet_1)
 * [Binary Gauntlet 2:Binary Exploitation](picoCTF%202021/Binary%20Exploitation/Binary_Gauntlet_2)
+* [Binary Gauntlet 3:Binary Exploitation](picoCTF%202021/Binary%20Exploitation/Binary_Gauntlet_3)
 ## picoCTF 2019
 [picoCTF 2019](picoCTF%202019)
 * [Bases:General Skills](picoCTF%202019/General%20Skills/Bases)
