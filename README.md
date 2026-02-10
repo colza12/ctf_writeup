@@ -66,6 +66,10 @@
 * [python8:Misc](SatokiCTF/Misc/python8)
 
 # permanent
+## Daily AlpacaHack B-SIDE
+[DailyAlpacaHack B-SIDE](DailyAlpacaHack_B-SIDE)
+* [Inu Profile:Web](DailyAlpacaHack_B-SIDE/2026-2/Inu_Profile)
+* [HellCouple:Crypto](DailyAlpacaHack_B-SIDE/2026-2/HellCouple)
 ## picoCTF 2025
 [picoCTF 2025](picoCTF_2025)
 * [PIE TIME:Binary Exploitation](picoCTF_2025/Binary_Exploitation/PIE_TIME)
