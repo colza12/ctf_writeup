@@ -72,6 +72,8 @@
 * [HellCouple:Crypto](DailyAlpacaHack_B-SIDE/2026-2/HellCouple)
 * [invisible-grep:Misc](DailyAlpacaHack_B-SIDE/2026-2/invisible-grep)
 * [ret2basics:Pwn](DailyAlpacaHack_B-SIDE/2026-2/ret2basics)
+* [ECRSA:Crypto](DailyAlpacaHack_B-SIDE/2026-2/ECRSA)
+* [Stealerusk:Rev](DailyAlpacaHack_B-SIDE/2026-2/Stealerusk)
 
 ## picoCTF 2025
 [picoCTF 2025](picoCTF_2025)
