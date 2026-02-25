@@ -65,6 +65,7 @@
 * [nadesicall:Misc](SatokiCTF/Misc/nadesicall)
 * [python8:Misc](SatokiCTF/Misc/python8)
 
+
 # permanent
 ## Daily AlpacaHack B-SIDE
 [DailyAlpacaHack B-SIDE](DailyAlpacaHack_B-SIDE)
@@ -74,7 +75,6 @@
 * [ret2basics:Pwn](DailyAlpacaHack_B-SIDE/2026-2/ret2basics)
 * [ECRSA:Crypto](DailyAlpacaHack_B-SIDE/2026-2/ECRSA)
 * [Stealerusk:Rev](DailyAlpacaHack_B-SIDE/2026-2/Stealerusk)
-
 ## picoCTF 2025
 [picoCTF 2025](picoCTF_2025)
 * [PIE TIME:Binary Exploitation](picoCTF_2025/Binary_Exploitation/PIE_TIME)
