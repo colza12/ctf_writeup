@@ -70,6 +70,7 @@
 ## AlpacaHack Round 6 (Pwn)
 [AlpacaHack Round6](AlpacaHack_Round6)
 * [inbound:Pwn](AlpacaHack_Round6/inbound)
+* [catcpy:Pwn](AlpacaHack_Round6/catcpy)
 ## AlpacaHack Round 1 (Pwn)
 [AlpacaHack Round1](AlpacaHack_Round1)
 * [echo:Pwn](AlpacaHack_Round1/echo)
