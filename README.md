@@ -67,6 +67,9 @@
 
 
 # permanent
+## AlpacaHack Round 10 (Pwn)
+[AlpacaHack Round10](AlpacaHack_Round10)
+* [Oyster:Pwn](AlpacaHack_Round10/Oyster)
 ## AlpacaHack Round 6 (Pwn)
 [AlpacaHack Round6](AlpacaHack_Round6)
 * [inbound:Pwn](AlpacaHack_Round6/inbound)
