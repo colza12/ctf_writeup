@@ -145,6 +145,6 @@ $
 [*] Got EOF while sending in interactive
 ```
 
-Get the flag!
+Got the flag!
 
 `Alpaca{wH4t_5h3L1f1Sh_d0_U_l1K3_7h3_B3s7?}`
