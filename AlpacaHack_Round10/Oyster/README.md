@@ -5,7 +5,7 @@ Oyster has a secure shell to store your valuable pearl.
 Attachment  
 [oyster.tar.gz](oyster.tar.gz)  
 
-Tags : Heap Buffer Overflow, Libc Leak  
+Tags : Null Byte Overwrite, Out-Of-Bounds Write  
 Author : ptr-yudai
 
 # Solution
