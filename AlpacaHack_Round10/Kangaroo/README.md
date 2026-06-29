@@ -261,3 +261,10 @@ $
 Got the flag!
 
 `Alpaca{Ch3cK-4f7Er-buG_1s_m34n1NgL3s5}`
+
+# References
+```
+$ cp chal chal.bak
+$ patchelf --set-interpreter ./ld-linux-x86-64.so.2 ./chal
+$ patchelf --set-rpath ./libc_dir ./chal
+```
