@@ -267,7 +267,7 @@ Got the flag!
 # References
 `g_messages[SLOT*SIZE]`は最大0x240offset
 offsetは`index*SIZE=0x240`
-sizeの8を掛けて0x238になる値indexは`-1024819115206086193`
+sizeの8を掛けて0x238になるindex値は`-1024819115206086193`
 ```
  ► 0x4013ea <main+245>    call   rax                         <clear_message>
         rdi: 0x404080 (g_messages) ◂— 0
