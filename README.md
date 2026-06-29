@@ -91,6 +91,9 @@
 [RTACTF 2023 Spring](RTACTF_2023_Spring)
 * [before-write:Pwn](RTACTF_2023_Spring/before-write)
 * [write:Pwn](RTACTF_2023_Spring/write)
+## CakeCTF 2023 mirrored by AlpacaHack
+[CakeCTF 2023](CakeCTF_2023)
+* [vtable4b:Pwn](CakeCTF_2023/vtable4b)
 ## picoCTF 2025
 [picoCTF 2025](picoCTF_2025)
 * [PIE TIME:Binary Exploitation](picoCTF_2025/Binary_Exploitation/PIE_TIME)
